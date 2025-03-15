@@ -15,14 +15,17 @@ function isActive(path: string) {
 <template>
   <div class="py-5 border-b dark:border-gray-800 font-semibold">
     <div class="flex px-6 container max-w-5xl justify-between mx-auto items-baseline">
-      <ul class="flex items-baseline space-x-5">
+      <ul class="hidden sm:flex items-baseline space-x-5">
         <li class="text-base sm:text-2xl font-bold">
           <NuxtLink to="/" :class="{ underline: $route.path === '/' }">
             {{ navbarData.homeTitle }}
           </NuxtLink>
         </li>
       </ul>
-      <ul class="flex items-center space-x-3 sm:space-x-6 text-sm sm:text-lg">
+      <ul class="flex items-center space-x-3 sm:space-x-6 text-base sm:text-lg w-full sm:w-auto">
+        <li class="flex mr-auto sm:hidden">
+          <NuxtLink to="/" :class="{ underline:  $route.path === '/' }"> Home </NuxtLink>
+        </li>
         <li>
           <NuxtLink to="/blogs" :class="{ underline: isActive('/blogs') }"> Blogs </NuxtLink>
         </li>
