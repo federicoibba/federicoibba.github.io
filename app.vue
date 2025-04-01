@@ -6,6 +6,16 @@ useHead({
     lang: 'en',
   },
   meta: () => siteMetaData,
+  // script: [
+  //   {
+  //     src: 'https://utteranc.es/client.js',
+  //     repo: 'federicoibba/federicoibba.github.io',
+  //     issueTerm: 'title',
+  //     label: '💬 comment',
+  //     theme: 'github-dark',
+  //     crossorigin: 'anonymous',
+  //   },
+  // ],
 })
 </script>
 
