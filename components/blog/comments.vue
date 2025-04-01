@@ -8,6 +8,7 @@
       src="https://utteranc.es/client.js" 
       repo="federicoibba/federicoibba.github.io"
       issue-term="title"
+      label="💬 comment"
       :theme
       crossorigin="anonymous"
       async 
