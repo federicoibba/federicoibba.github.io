@@ -39,116 +39,50 @@
       </UPageHeader>
 
       <div class="space-y-8">
-        <!-- Introduction Card -->
-        <UCard>
-          <template #header>
-            <h2 class="text-xl font-semibold">
-              Introduction
-            </h2>
-          </template>
-          <p class="text-gray-600 dark:text-gray-300">
-            My journey with Computer Science started when I was four and I liked to play games in my father PC using MS-DOS.<br>
-            Today I am a Software Engineer, passionate about Web Development and mainly focused on Frontend.
-            I like to work with Typescript, Vue, Nuxt, but also AWS, ExpressJS and NestJS.
-          </p>
-        </UCard>
+        <!-- Introduction Section -->
+        <AboutTextSection title="Introduction">
+          My journey with Computer Science started when I was four and I liked to play games in my father PC using MS-DOS.<br>
+          Today I am a Software Engineer, passionate about Web Development and mainly focused on Frontend.
+          I like to work with Typescript, Vue, Nuxt, but also AWS, ExpressJS and NestJS.
+        </AboutTextSection>
 
-        <!-- Goals -->
-        <UCard>
-          <template #header>
-            <h2 class="text-xl font-semibold">
-              Current Goals
-            </h2>
-          </template>
-          <p class="text-gray-600 dark:text-gray-300">
-            In the last months, I am studying to learn more about the Backend things I miss,
-            so that I can accomplish my dream to be an Architect one day.
-          </p>
-        </UCard>
+        <!-- Goals Section -->
+        <AboutTextSection title="Current Goals">
+          In the last months, I am studying to learn more about the Backend things I miss,
+          so that I can accomplish my dream to be an Architect one day.
+        </AboutTextSection>
 
         <!-- Skills Section -->
         <UCard>
           <template #header>
-            <h2 class="text-xl font-semibold">
-              Tech Stack
-            </h2>
+            <AppSectionHeader
+              title="Tech Stack"
+              description="Technologies I work with and currently learning"
+            />
           </template>
           <div class="space-y-6">
-            <div
+            <AboutTechStackCategory
               v-for="category in techStack"
               :key="category.name"
-              class="space-y-3"
-            >
-              <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">
-                {{ category.name }}
-              </h3>
-              <div class="flex flex-wrap gap-2">
-                <UBadge
-                  v-for="tech in category.technologies"
-                  :key="tech"
-                  :variant="category.variant"
-                >
-                  {{ tech }}
-                </UBadge>
-              </div>
-            </div>
+              :category="category"
+            />
           </div>
         </UCard>
 
         <!-- Journey Timeline -->
         <UCard>
           <template #header>
-            <div class="flex justify-between">
-              <h2 class="text-xl font-semibold">
-                My Journey
-              </h2>
-              <UButton
-                icon="i-heroicons-document-arrow-down"
-                class="cursor-pointer transition hover:bg-primary/75 active:bg-primary/75"
-                trailing-icon="i-lucide-arrow-right"
-                to="https://drive.google.com/file/d/1IZY_RvkIN4t_S6CX7_rySdHV3PVaqe8I/view"
-                target="_blank"
-              >
-                Resume
-              </UButton>
-            </div>
+            <AppSectionHeader
+              title="My Journey"
+              description="Professional and educational milestones"
+              view-all-link="https://drive.google.com/file/d/1IZY_RvkIN4t_S6CX7_rySdHV3PVaqe8I/view"
+            />
           </template>
           <UChangelogVersions :versions="journeyVersions" />
         </UCard>
 
         <!-- Contact Section -->
-        <UPageCTA
-          title="Let's Connect!"
-          description="Feel free to reach out for collaboration opportunities, technical discussions, or just to say hello."
-        >
-          <template #links>
-            <UButton
-              to="mailto:federico.ibba9+blog@gmail.com"
-              size="lg"
-              icon="i-heroicons-envelope"
-            >
-              Email Me
-            </UButton>
-            <UButton
-              to="https://linkedin.com/in/federicoibba"
-              target="_blank"
-              variant="outline"
-              size="lg"
-              icon="i-simple-icons-linkedin"
-            >
-              LinkedIn
-            </UButton>
-            <UButton
-              to="https://github.com/federicoibba"
-              target="_blank"
-              variant="outline"
-              size="sm"
-              icon="i-simple-icons-github"
-            >
-              GitHub
-            </UButton>
-          </template>
-        </UPageCTA>
+        <AppContactSection />
       </div>
     </UPage>
   </UContainer>
