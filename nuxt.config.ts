@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/rss.xml'],
+      routes: ['/', '/it', '/en'],
     },
   },
   eslint: {
