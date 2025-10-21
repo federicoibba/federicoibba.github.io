@@ -1,12 +1,31 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
-
   modules: [
-    '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/image',
-    '@nuxt/ui'
-  ]
+    '@nuxt/ui',
+    // Ensure @nuxt/content is after @nuxt/ui or no Prose components are availabe
+    '@nuxt/content',
+  ],
+  ssr: false,
+  devtools: { enabled: true },
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+  },
+  css: ['~/assets/css/main.css'],
+  content: {
+    build: {
+      markdown: {
+        highlight: {
+          langs: ['js', 'html', 'css', 'typescript', 'python', 'json'],
+        },
+      },
+    },
+  },
+  compatibilityDate: '2025-07-15',
+  eslint: {
+    config: {
+      stylistic: true,
+    },
+  },
 })
