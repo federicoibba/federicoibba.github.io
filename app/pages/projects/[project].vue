@@ -7,7 +7,7 @@
       >
         <div class="flex w-full justify-center gap-4">
           <UBadge
-            v-for="tag in project.meta.tags"
+            v-for="tag in project.tags"
             :key="tag"
             size="xl"
           >
@@ -15,7 +15,7 @@
           </UBadge>
         </div>
         <NuxtImg
-          :src="project.meta.image"
+          :src="project.image"
           class="rounded-lg mx-auto"
           fit="contain"
           sizes="100vw sm:50vw md:800px"
@@ -35,12 +35,11 @@
 </template>
 
 <script lang="ts" setup>
-import type { Item } from '~/types/item'
-
 const { path } = useRoute()
+const { locale } = useI18n()
 
 const { data: project } = await useAsyncData(
   `project-${path}`,
-  () => queryCollection('projects').path(path).first() as Promise<Item>,
+  () => queryCollection('projects').where('locale', '=', locale.value).path(path).first(),
 )
 </script>

@@ -43,10 +43,10 @@
           <UBlogPost
             v-for="(post, index) in filteredArticles"
             :key="index"
-            :image="post.meta.image"
+            :image="post.image"
             :title="post.title"
             :description="post.description"
-            :date="post.meta.date"
+            :date="post.date"
             :to="post.path"
           />
         </UBlogPosts>
@@ -56,15 +56,14 @@
 </template>
 
 <script setup lang="ts">
-import type { Item } from '~/types/item'
+const { locale } = useI18n()
 
-const { data: articles } = await useAsyncData(
-  'articles-list',
-  () =>
-    queryCollection('articles').order('meta', 'DESC').all() as Promise<
-      Array<Item>
-    >,
-)
+const { data: articles } = await useAsyncData(`articles-list-${locale.value}`, () => {
+  return queryCollection('articles')
+    .where('locale', '=', locale.value)
+    .order('meta', 'DESC')
+    .all()
+})
 
 const {
   searchQuery,

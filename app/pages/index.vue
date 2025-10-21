@@ -15,7 +15,7 @@
             <AppSectionHeader
               :title="$t('home.projects.title')"
               :description="$t('home.projects.description')"
-              view-all-link="/projects"
+              :view-all-link="`/${locale}/projects`"
             />
           </template>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -33,16 +33,16 @@
             <AppSectionHeader
               :title="$t('home.latestArticle.title')"
               :description="$t('home.latestArticle.description')"
-              view-all-link="/articles"
+              :view-all-link="`/${locale}/articles`"
             />
           </template>
           <UBlogPost
             v-if="lastArticle"
             orientation="horizontal"
-            :image="lastArticle.meta.image"
+            :image="lastArticle.image"
             :title="lastArticle.title"
             :description="lastArticle.description"
-            :date="lastArticle.meta.date"
+            :date="lastArticle.date"
             :to="lastArticle.path"
           />
         </UCard>
@@ -56,37 +56,36 @@
 
 <script setup lang="ts">
 import type { ButtonProps } from '@nuxt/ui'
-import type { Item } from '~/types/item'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 const links = computed<ButtonProps[]>(() => [
   {
     label: t('home.buttons.readBlog'),
-    to: '/articles',
+    to: `/${locale.value}/articles`,
     color: 'neutral',
     variant: 'subtle',
     icon: 'i-lucide-book-open',
   },
   {
     label: t('home.buttons.seeProjects'),
-    to: '/projects',
+    to: `/${locale.value}/projects`,
     icon: 'i-lucide-terminal',
     trailingIcon: 'i-lucide-arrow-right',
   },
 ])
 
-const { data: lastArticle } = await useAsyncData(
-  'last-article',
-  () =>
-    queryCollection('articles').order('meta', 'DESC').first() as Promise<Item>,
-)
+const { data: lastArticle } = await useAsyncData(`last-article-${locale.value}`, () => {
+  return queryCollection('articles')
+    .where('locale', '=', locale.value)
+    .order('meta', 'DESC')
+    .first()
+})
 
-const { data: projects } = await useAsyncData(
-  'projects-list-home',
-  () =>
-    queryCollection('projects').order('meta', 'DESC').all() as Promise<
-      Array<Item>
-    >,
-)
+const { data: projects } = await useAsyncData(`projects-list-home-${locale.value}`, () => {
+  return queryCollection('projects')
+    .where('locale', '=', locale.value)
+    .order('meta', 'DESC')
+    .all()
+})
 </script>

@@ -20,7 +20,7 @@
         :items="availableLocales"
         value-key="code"
         class="ml-2"
-        @update:model-value="changeLocale"
+        @update:model-value="(lang) => setLocale(lang)"
       />
       <UColorModeSwitch class="ml-4" />
     </template>
@@ -41,23 +41,19 @@ const availableLocales = computed(() => {
   }))
 })
 
-const changeLocale = (newLocale: 'en' | 'it') => {
-  setLocale(newLocale)
-}
-
 const items = computed<NavigationMenuItem[]>(() => [{
   label: t('navigation.articles'),
-  to: '/articles',
+  to: `/${locale.value}/articles`,
   icon: 'i-lucide-book-a',
   active: route.path.startsWith('/articles'),
 }, {
   label: t('navigation.projects'),
-  to: '/projects',
+  to: `/${locale.value}/projects`,
   icon: 'i-lucide-square-terminal',
   active: route.path.startsWith('/projects'),
 }, {
   label: t('navigation.about'),
-  to: '/about',
+  to: `/${locale.value}/about`,
   icon: 'i-lucide-square-user',
   active: route.path.startsWith('/about'),
 }])

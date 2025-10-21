@@ -7,7 +7,7 @@
       <div class="overflow-hidden rounded-lg">
         <NuxtImg
           class="object-cover object-top w-full h-32 transform transition-transform duration-200 hover:scale-110"
-          :src="project.meta.image"
+          :src="project.image"
           width="320"
         />
       </div>
@@ -22,10 +22,10 @@
 </template>
 
 <script setup lang="ts">
-import type { Item } from '~/types/item'
+import type { ProjectsCollectionItem } from '@nuxt/content'
 
 interface Props {
-  project: Item
+  project: ProjectsCollectionItem
 }
 
 defineProps<Props>()

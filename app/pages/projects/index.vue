@@ -34,15 +34,14 @@
 </template>
 
 <script setup lang="ts">
-import type { Item } from '~/types/item'
+const { locale } = useI18n()
 
-const { data: projects } = await useAsyncData(
-  'projects-list',
-  () =>
-    queryCollection('projects').order('meta', 'DESC').all() as Promise<
-      Array<Item>
-    >,
-)
+const { data: projects } = await useAsyncData(`projects-list-${locale.value}`, () => {
+  return queryCollection('projects')
+    .where('locale', '=', locale.value)
+    .order('meta', 'DESC')
+    .all()
+})
 
 const { searchQuery, selectedTags, allTags, filteredItems: filteredProjects, toggleTag } = useFilterItems(projects)
 </script>

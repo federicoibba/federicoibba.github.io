@@ -5,7 +5,7 @@
         :title="article.title"
         :description="article.description"
       />
-      <NuxtImg :src="article.meta.image" />
+      <NuxtImg :src="article.image" />
       <template #right>
         <UContentToc :links="article.body.toc?.links" />
       </template>
@@ -25,11 +25,9 @@
 </template>
 
 <script lang="ts" setup>
-import type { Item } from '~/types/item'
-
 const { path } = useRoute()
 
 const { data: article } = await useAsyncData(`blog-post-${path}`, () =>
-  queryCollection('articles').path(path).first() as Promise<Item>,
+  queryCollection('articles').path(path).first(),
 )
 </script>

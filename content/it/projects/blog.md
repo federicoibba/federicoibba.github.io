@@ -1,17 +1,17 @@
 ---
-title: Food RAG using LLM
-date: 20th October 2025
-description: Creation of an LLM strategy for retrieving nutritional information about food
-image: /images/projects/rag.jpg
-alt: LLM RAG for Food nutritional information
-ogImage: /images/projects/food-rag.jpg
-tags: ['llm', 'rag', 'openai']
-published: true
+title: federicoibba.com - Il Mio Blog Personale
+date: 2025-09-15
+description: Come ho implementato il blog che stai guardando proprio ora
+image: /images/projects/blog.jpg
+alt: Blog personale di Federico Ibba
+ogImage: /images/projects/blog.jpg
+tags: ['javascript', 'typescript', 'nuxt', 'vue', 'nuxt/ui', 'nuxt/content']
+locale: 'it'
 ---
 
-### Description
+### Descrizione
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lorem quam, sodales in mi ut, condimentum volutpat turpis. Integer scelerisque placerat eros, in auctor erat venenatis quis. Nam vehicula lorem purus, eu facilisis arcu volutpat et. Nullam in arcu sit amet leo mollis viverra. Suspendisse potenti. Integer mollis nunc nisl. Curabitur bibendum vulputate turpis vitae rutrum. Aliquam sem metus, tincidunt at urna quis, sagittis vulputate risus. Phasellus tempus erat nec elementum accumsan. Duis volutpat dui tincidunt porta lacinia.
+Questo è il mio blog personale dove condivido i miei pensieri, tutorial e progetti su sviluppo web e programmazione. È costruito con Nuxt 3, Vue 3 e Nuxt UI per un'esperienza moderna e reattiva. Morbi lorem quam, sodales in mi ut, condimentum volutpat turpis. Integer scelerisque placerat eros, in auctor erat venenatis quis. Nam vehicula lorem purus, eu facilisis arcu volutpat et. Nullam in arcu sit amet leo mollis viverra. Suspendisse potenti. Integer mollis nunc nisl. Curabitur bibendum vulputate turpis vitae rutrum. Aliquam sem metus, tincidunt at urna quis, sagittis vulputate risus. Phasellus tempus erat nec elementum accumsan. Duis volutpat dui tincidunt porta lacinia.
 
 Vestibulum at est sollicitudin nulla consectetur cursus. Praesent sagittis dapibus sem et pulvinar. Maecenas ut lectus ut arcu porta mollis in sit amet diam. Vivamus viverra lacus et tellus tempor, eu pharetra magna ultricies. Sed vulputate ac lorem id dictum. Aenean vitae velit ut erat lacinia semper. Donec augue ligula, suscipit eu neque id, interdum tincidunt velit. Maecenas neque felis, euismod non arcu eu, ultrices condimentum turpis. Pellentesque tempor consectetur ante, nec consequat magna placerat id. Fusce ultrices a ante id ullamcorper. Aliquam eu tempus mi. Aenean ultricies dui odio, at condimentum mauris placerat nec. Nullam mollis ex non est mattis interdum. Sed commodo mauris augue, sit amet tincidunt ligula egestas a. Nam placerat sem a mollis pharetra.
 

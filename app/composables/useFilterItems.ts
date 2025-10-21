@@ -1,13 +1,15 @@
-import type { Item } from '~/types/item'
+import type { ArticlesCollectionItem } from '@nuxt/content'
 
-export const useFilterItems = (items: Ref<Item[] | null | undefined>) => {
+export const useFilterItems = (
+  items: Ref<ArticlesCollectionItem[] | null | undefined>,
+) => {
   const searchQuery = ref('')
   const selectedTags = ref<string[]>([])
 
   const allTags = computed(() => {
     const tags = new Set<string>()
     items.value?.forEach((item) => {
-      item.meta.tags?.forEach(tag => tags.add(tag))
+      item.tags?.forEach(tag => tags.add(tag))
     })
     return Array.from(tags).sort()
   })
@@ -23,7 +25,7 @@ export const useFilterItems = (items: Ref<Item[] | null | undefined>) => {
 
       const matchesTags
         = selectedTags.value.length === 0
-          || selectedTags.value.every(tag => item.meta.tags?.includes(tag))
+          || selectedTags.value.every(tag => item.tags?.includes(tag))
 
       return matchesSearch && matchesTags
     })

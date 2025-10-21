@@ -3,11 +3,11 @@
 </template>
 
 <script setup lang="ts">
+import type { ArticlesCollectionItem } from '@nuxt/content'
 import type { TreeItem } from '@nuxt/ui'
-import type { Item } from '~/types/item'
 
 interface Props {
-  articles: Array<Item>
+  articles: Array<ArticlesCollectionItem>
 }
 
 const { articles } = defineProps<Props>()
@@ -15,7 +15,7 @@ const router = useRouter()
 
 const timelineItems = computed<TreeItem[]>(() => {
   const groupedByYear = articles.reduce((acc, article) => {
-    const year = new Date(article.meta.date).getFullYear().toString()
+    const year = new Date(article.date).getFullYear().toString()
     if (!acc[year]) {
       acc[year] = []
     }

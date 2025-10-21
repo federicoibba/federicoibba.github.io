@@ -1,12 +1,12 @@
 ---
-title: federicoibba.com - My Personal Blog
-date: 20th October 2025
-description: How I've implemented the blog you're looking at right now
-image: /images/projects/blog.jpg
-alt: Personal Federico Ibba blog
-ogImage: /images/projects/blog.jpg
-tags: ['javascript', 'typescript', 'nuxt', 'vue', 'nuxt/ui', 'nuxt/content']
-published: true
+title: Food RAG using LLM
+date: 2025-09-15
+description: Creation of an LLM strategy for retrieving nutritional information about food
+image: /images/projects/rag.jpg
+alt: LLM RAG for Food nutritional information
+ogImage: /images/projects/food-rag.jpg
+tags: ['llm', 'rag', 'openai']
+locale: 'en'
 ---
 
 ### Description
