@@ -2,9 +2,9 @@
   <UContainer>
     <UPage>
       <UPageHero
-        title="Fede's Code Journey"
+        :title="$t('home.hero.title')"
         orientation="vertical"
-        description="A safeplace where I share my thoughts, tutorials and projects about web development and programming."
+        :description="$t('home.hero.description')"
         :links
       />
 
@@ -13,8 +13,8 @@
         <UCard>
           <template #header>
             <AppSectionHeader
-              title="My Last Projects"
-              description="Here you will find all the projects I do in my spare time!"
+              :title="$t('home.projects.title')"
+              :description="$t('home.projects.description')"
               view-all-link="/projects"
             />
           </template>
@@ -31,8 +31,8 @@
         <UCard>
           <template #header>
             <AppSectionHeader
-              title="Latest Article"
-              description="Read my most recent blog post"
+              :title="$t('home.latestArticle.title')"
+              :description="$t('home.latestArticle.description')"
               view-all-link="/articles"
             />
           </template>
@@ -58,16 +58,18 @@
 import type { ButtonProps } from '@nuxt/ui'
 import type { Item } from '~/types/item'
 
-const links = ref<ButtonProps[]>([
+const { t } = useI18n()
+
+const links = computed<ButtonProps[]>(() => [
   {
-    label: 'Read the blog',
+    label: t('home.buttons.readBlog'),
     to: '/articles',
     color: 'neutral',
     variant: 'subtle',
     icon: 'i-lucide-book-open',
   },
   {
-    label: 'See my projects',
+    label: t('home.buttons.seeProjects'),
     to: '/projects',
     icon: 'i-lucide-terminal',
     trailingIcon: 'i-lucide-arrow-right',

@@ -1,6 +1,6 @@
 <template>
   <UHeader
-    title="Fede's Code Journey"
+    :title="$t('site.title')"
     mode="slideover"
   >
     <template #body>
@@ -15,6 +15,13 @@
         orientation="horizontal"
         class="hidden lg:flex -mx-2.5"
       />
+      <USelect
+        :model-value="locale"
+        :items="availableLocales"
+        value-key="code"
+        class="ml-2"
+        @update:model-value="changeLocale"
+      />
       <UColorModeSwitch class="ml-4" />
     </template>
   </UHeader>
@@ -25,18 +32,31 @@ import type { NavigationMenuItem } from '@nuxt/ui'
 
 const route = useRoute()
 
+const { t, locale, locales, setLocale } = useI18n()
+
+const availableLocales = computed(() => {
+  return locales.value.map(l => ({
+    code: l.code,
+    label: l.code.toUpperCase(),
+  }))
+})
+
+const changeLocale = (newLocale: 'en' | 'it') => {
+  setLocale(newLocale)
+}
+
 const items = computed<NavigationMenuItem[]>(() => [{
-  label: 'Articles',
+  label: t('navigation.articles'),
   to: '/articles',
   icon: 'i-lucide-book-a',
   active: route.path.startsWith('/articles'),
 }, {
-  label: 'Projects',
+  label: t('navigation.projects'),
   to: '/projects',
   icon: 'i-lucide-square-terminal',
   active: route.path.startsWith('/projects'),
 }, {
-  label: 'About me',
+  label: t('navigation.about'),
   to: '/about',
   icon: 'i-lucide-square-user',
   active: route.path.startsWith('/about'),

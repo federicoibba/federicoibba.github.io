@@ -1,0 +1,100 @@
+{
+  "site": {
+    "title": "Fede's Code Journey",
+    "tagline": "A safeplace where I share my thoughts, tutorials and projects about web development and programming."
+  },
+  "navigation": {
+    "articles": "Articles",
+    "projects": "Projects",
+    "about": "About me"
+  },
+  "home": {
+    "hero": {
+      "title": "Fede's Code Journey",
+      "description": "A safeplace where I share my thoughts, tutorials and projects about web development and programming."
+    },
+    "projects": {
+      "title": "My Last Projects",
+      "description": "Here you will find all the projects I do in my spare time!"
+    },
+    "latestArticle": {
+      "title": "Latest Article",
+      "description": "Read my most recent blog post"
+    },
+    "buttons": {
+      "readBlog": "Read the blog",
+      "seeProjects": "See my projects"
+    }
+  },
+  "about": {
+    "title": "About Me, Federico Ibba",
+    "description": "Software Engineer passionate about Web Development",
+    "buttons": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "resume": "Resume"
+    },
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "My journey with Computer Science started when I was four and I liked to play games in my father PC using MS-DOS. Today I am a Software Engineer, passionate about Web Development and mainly focused on Frontend. I like to work with Typescript, Vue, Nuxt, but also AWS, ExpressJS and NestJS."
+      },
+      "goals": {
+        "title": "Current Goals",
+        "content": "In the last months, I am studying to learn more about the Backend things I miss, so that I can accomplish my dream to be an Architect one day."
+      },
+      "techStack": {
+        "title": "Tech Stack",
+        "description": "Technologies I work with and currently learning"
+      },
+      "journey": {
+        "title": "My Journey",
+        "description": "Professional and educational milestones"
+      }
+    }
+  },
+  "articles": {
+    "title": "Articles",
+    "description": "Here you will find all the blog posts I have written & published on this site.",
+    "filter": {
+      "placeholder": "Search articles...",
+      "timeline": {
+        "title": "Timeline",
+        "description": "Browse by year"
+      }
+    },
+    "all": {
+      "title": "All Articles",
+      "description": "Read my latest thoughts and tutorials"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Here you will find all the projects I do in my spare time!",
+    "filter": {
+      "placeholder": "Search projects..."
+    },
+    "all": {
+      "title": "All Projects",
+      "description": "Filter and explore my projects"
+    }
+  },
+  "contact": {
+    "title": "Let's Connect!",
+    "description": "Feel free to reach out for collaboration opportunities, technical discussions, or just to say hello.",
+    "buttons": {
+      "email": "Email Me",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
+  },
+  "footer": {
+    "title": "Fede's Code Journey",
+    "copyright": "© {year} Federico Ibba",
+    "followMe": "Follow me on my main channels!"
+  },
+  "common": {
+    "viewAll": "View All",
+    "resume": "Resume"
+  }
+}

@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     // Ensure @nuxt/content is after @nuxt/ui or no Prose components are availabe
     '@nuxt/content',
+    '@nuxtjs/i18n',
   ],
   ssr: false,
   devtools: { enabled: true },
@@ -27,5 +28,14 @@ export default defineNuxtConfig({
     config: {
       stylistic: true,
     },
+  },
+  i18n: {
+    locales: [
+      { code: 'en', language: 'en-GB', name: 'English', file: 'en.json' },
+      { code: 'it', language: 'it-IT', name: 'Italiano', file: 'it.json' },
+    ],
+    defaultLocale: 'en',
+    langDir: 'locales/',
+    strategy: 'no_prefix',
   },
 })

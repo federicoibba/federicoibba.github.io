@@ -3,7 +3,7 @@
     <UInput
       id="filter-articles"
       v-model="searchQuery"
-      placeholder="Search articles..."
+      :placeholder="$t('articles.filter.placeholder')"
       icon="i-heroicons-magnifying-glass"
     />
 

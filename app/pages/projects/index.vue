@@ -2,15 +2,15 @@
   <UContainer>
     <UPage>
       <UPageHeader
-        title="Projects"
-        description="Here you will find all the projects I do in my spare time!"
+        :title="$t('projects.title')"
+        :description="$t('projects.description')"
       />
 
       <UCard>
         <template #header>
           <AppSectionHeader
-            title="All Projects"
-            description="Filter and explore my projects"
+            :title="$t('projects.all.title')"
+            :description="$t('projects.all.description')"
           />
         </template>
         <div class="space-y-6">

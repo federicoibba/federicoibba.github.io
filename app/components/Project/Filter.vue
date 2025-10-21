@@ -2,7 +2,7 @@
   <div class="flex items-center gap-4 flex-wrap">
     <UInput
       v-model="searchQuery"
-      placeholder="Search projects..."
+      :placeholder="$t('projects.filter.placeholder')"
       icon="i-heroicons-magnifying-glass"
       class="min-w-64"
     />

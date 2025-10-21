@@ -2,8 +2,8 @@
   <UContainer>
     <UPage>
       <UPageHeader
-        title="Articles"
-        description="Here you will find all the blog posts I have written & published on this site."
+        :title="$t('articles.title')"
+        :description="$t('articles.description')"
       />
       <template #right>
         <nav class="flex flex-col gap-8">
@@ -19,8 +19,8 @@
             <UCard>
               <template #header>
                 <AppSectionHeader
-                  title="Timeline"
-                  description="Browse by year"
+                  :title="$t('articles.filter.timeline.title')"
+                  :description="$t('articles.filter.timeline.description')"
                 />
               </template>
               <ArticleTimeline
@@ -35,8 +35,8 @@
       <UCard>
         <template #header>
           <AppSectionHeader
-            title="All Articles"
-            description="Read my latest thoughts and tutorials"
+            :title="$t('articles.all.title')"
+            :description="$t('articles.all.description')"
           />
         </template>
         <UBlogPosts orientation="vertical">

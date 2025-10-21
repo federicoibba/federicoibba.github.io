@@ -2,18 +2,18 @@
   <UFooter class="border-t border-default mt-8">
     <template #left>
       <span class="text-xl font-bold">
-        Fede's Code Journey
+        {{ $t('footer.title') }}
       </span>
     </template>
 
     <template #default>
       <p class="text-sm">
-        © {{ new Date().getFullYear() }} Federico Ibba
+        {{ $t('footer.copyright', { year: new Date().getFullYear() }) }}
       </p>
     </template>
 
     <template #right>
-      Follow me on my main channels!
+      {{ $t('footer.followMe') }}
       <UButton
         icon="i-simple-icons-linkedin"
         color="neutral"

@@ -1,0 +1,100 @@
+{
+  "site": {
+    "title": "Il Viaggio di Fede nel Codice",
+    "tagline": "Un posto sicuro dove condivido i miei pensieri, tutorial e progetti su sviluppo web e programmazione."
+  },
+  "navigation": {
+    "articles": "Articoli",
+    "projects": "Progetti",
+    "about": "Chi sono"
+  },
+  "home": {
+    "hero": {
+      "title": "Il Viaggio di Fede nel Codice",
+      "description": "Un posto sicuro dove condivido i miei pensieri, tutorial e progetti su sviluppo web e programmazione."
+    },
+    "projects": {
+      "title": "I Miei Ultimi Progetti",
+      "description": "Qui troverai tutti i progetti che realizzo nel mio tempo libero!"
+    },
+    "latestArticle": {
+      "title": "Ultimo Articolo",
+      "description": "Leggi il mio post più recente"
+    },
+    "buttons": {
+      "readBlog": "Leggi il blog",
+      "seeProjects": "Vedi i miei progetti"
+    }
+  },
+  "about": {
+    "title": "Chi Sono, Federico Ibba",
+    "description": "Ingegnere del Software appassionato di Sviluppo Web",
+    "buttons": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "resume": "Curriculum"
+    },
+    "sections": {
+      "introduction": {
+        "title": "Introduzione",
+        "content": "Il mio viaggio con l'Informatica è iniziato quando avevo quattro anni e mi piaceva giocare nel PC di mio padre usando MS-DOS. Oggi sono un Ingegnere del Software, appassionato di Sviluppo Web e principalmente focalizzato sul Frontend. Mi piace lavorare con Typescript, Vue, Nuxt, ma anche AWS, ExpressJS e NestJS."
+      },
+      "goals": {
+        "title": "Obiettivi Attuali",
+        "content": "Negli ultimi mesi, sto studiando per imparare di più sulle cose del Backend che mi mancano, così da poter realizzare il mio sogno di diventare un Architetto un giorno."
+      },
+      "techStack": {
+        "title": "Stack Tecnologico",
+        "description": "Tecnologie con cui lavoro e che sto attualmente imparando"
+      },
+      "journey": {
+        "title": "Il Mio Percorso",
+        "description": "Tappe professionali ed educative"
+      }
+    }
+  },
+  "articles": {
+    "title": "Articoli",
+    "description": "Qui troverai tutti i post del blog che ho scritto e pubblicato su questo sito.",
+    "filter": {
+      "placeholder": "Cerca articoli...",
+      "timeline": {
+        "title": "Timeline",
+        "description": "Naviga per anno"
+      }
+    },
+    "all": {
+      "title": "Tutti gli Articoli",
+      "description": "Leggi i miei ultimi pensieri e tutorial"
+    }
+  },
+  "projects": {
+    "title": "Progetti",
+    "description": "Qui troverai tutti i progetti che realizzo nel mio tempo libero!",
+    "filter": {
+      "placeholder": "Cerca progetti..."
+    },
+    "all": {
+      "title": "Tutti i Progetti",
+      "description": "Filtra ed esplora i miei progetti"
+    }
+  },
+  "contact": {
+    "title": "Connettiamoci!",
+    "description": "Sentiti libero di contattarmi per opportunità di collaborazione, discussioni tecniche, o semplicemente per salutare.",
+    "buttons": {
+      "email": "Scrivimi",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
+  },
+  "footer": {
+    "title": "Il Viaggio di Fede nel Codice",
+    "copyright": "© {year} Federico Ibba",
+    "followMe": "Seguimi sui miei canali principali!"
+  },
+  "common": {
+    "viewAll": "Vedi Tutto",
+    "resume": "Curriculum"
+  }
+}

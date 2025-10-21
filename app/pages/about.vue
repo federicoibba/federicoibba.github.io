@@ -2,8 +2,8 @@
   <UContainer>
     <UPage>
       <UPageHeader
-        title="About Me, Federico Ibba"
-        description="Software Engineer passionate about Web Development"
+        :title="$t('about.title')"
+        :description="$t('about.description')"
       >
         <template #links>
           <div class="flex gap-2">
@@ -14,7 +14,7 @@
               size="sm"
               icon="i-simple-icons-github"
             >
-              GitHub
+              {{ $t('about.buttons.github') }}
             </UButton>
             <UButton
               to="https://linkedin.com/in/federicoibba"
@@ -23,7 +23,7 @@
               size="sm"
               icon="i-simple-icons-linkedin"
             >
-              LinkedIn
+              {{ $t('about.buttons.linkedin') }}
             </UButton>
             <UButton
               to="https://drive.google.com/file/d/1IZY_RvkIN4t_S6CX7_rySdHV3PVaqe8I/view"
@@ -32,7 +32,7 @@
               size="sm"
               icon="i-heroicons-document-arrow-down"
             >
-              Resume
+              {{ $t('about.buttons.resume') }}
             </UButton>
           </div>
         </template>
@@ -40,24 +40,21 @@
 
       <div class="space-y-8">
         <!-- Introduction Section -->
-        <AboutTextSection title="Introduction">
-          My journey with Computer Science started when I was four and I liked to play games in my father PC using MS-DOS.<br>
-          Today I am a Software Engineer, passionate about Web Development and mainly focused on Frontend.
-          I like to work with Typescript, Vue, Nuxt, but also AWS, ExpressJS and NestJS.
+        <AboutTextSection :title="$t('about.sections.introduction.title')">
+          <span v-html="$t('about.sections.introduction.content')"></span>
         </AboutTextSection>
 
         <!-- Goals Section -->
-        <AboutTextSection title="Current Goals">
-          In the last months, I am studying to learn more about the Backend things I miss,
-          so that I can accomplish my dream to be an Architect one day.
+        <AboutTextSection :title="$t('about.sections.goals.title')">
+          {{ $t('about.sections.goals.content') }}
         </AboutTextSection>
 
         <!-- Skills Section -->
         <UCard>
           <template #header>
             <AppSectionHeader
-              title="Tech Stack"
-              description="Technologies I work with and currently learning"
+              :title="$t('about.sections.techStack.title')"
+              :description="$t('about.sections.techStack.description')"
             />
           </template>
           <div class="space-y-6">
@@ -73,8 +70,8 @@
         <UCard>
           <template #header>
             <AppSectionHeader
-              title="My Journey"
-              description="Professional and educational milestones"
+              :title="$t('about.sections.journey.title')"
+              :description="$t('about.sections.journey.description')"
               view-all-link="https://drive.google.com/file/d/1IZY_RvkIN4t_S6CX7_rySdHV3PVaqe8I/view"
             />
           </template>

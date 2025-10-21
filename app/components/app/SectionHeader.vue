@@ -17,7 +17,7 @@
       :icon="viewAllLink.includes('drive.google.com') ? 'i-heroicons-document-arrow-down' : undefined"
       trailing-icon="i-lucide-arrow-right"
     >
-      {{ viewAllLink.includes('drive.google.com') ? 'Resume' : 'View All' }}
+      {{ viewAllLink.includes('drive.google.com') ? $t('common.resume') : $t('common.viewAll') }}
     </UButton>
   </div>
 </template>

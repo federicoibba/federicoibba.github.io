@@ -1,7 +1,7 @@
 <template>
   <UPageCTA
-    title="Let's Connect!"
-    description="Feel free to reach out for collaboration opportunities, technical discussions, or just to say hello."
+    :title="$t('contact.title')"
+    :description="$t('contact.description')"
   >
     <template #links>
       <UButton
@@ -9,7 +9,7 @@
         size="lg"
         icon="i-heroicons-envelope"
       >
-        Email Me
+        {{ $t('contact.buttons.email') }}
       </UButton>
       <UButton
         to="https://linkedin.com/in/federicoibba"
@@ -18,7 +18,7 @@
         size="lg"
         icon="i-simple-icons-linkedin"
       >
-        LinkedIn
+        {{ $t('contact.buttons.linkedin') }}
       </UButton>
       <UButton
         to="https://github.com/federicoibba"
@@ -27,7 +27,7 @@
         size="sm"
         icon="i-simple-icons-github"
       >
-        GitHub
+        {{ $t('contact.buttons.github') }}
       </UButton>
     </template>
   </UPageCTA>
