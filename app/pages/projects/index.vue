@@ -39,7 +39,7 @@ const { locale } = useI18n()
 const { data: projects } = await useAsyncData(`projects-list-${locale.value}`, () => {
   return queryCollection('projects')
     .where('locale', '=', locale.value)
-    .order('meta', 'DESC')
+    .order('date', 'DESC')
     .all()
 })
 

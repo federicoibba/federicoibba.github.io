@@ -78,14 +78,14 @@ const links = computed<ButtonProps[]>(() => [
 const { data: lastArticle } = await useAsyncData(`last-article-${locale.value}`, () => {
   return queryCollection('articles')
     .where('locale', '=', locale.value)
-    .order('meta', 'DESC')
+    .order('date', 'DESC')
     .first()
 })
 
 const { data: projects } = await useAsyncData(`projects-list-home-${locale.value}`, () => {
   return queryCollection('projects')
     .where('locale', '=', locale.value)
-    .order('meta', 'DESC')
+    .order('date', 'DESC')
     .all()
 })
 </script>
