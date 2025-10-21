@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     // GitHub Pages deployment configuration
-    baseURL: '//',
+    baseURL: '/',
     buildAssetsDir: '_nuxt',
     pageTransition: { name: 'page', mode: 'out-in' },
   },
@@ -27,6 +27,12 @@ export default defineNuxtConfig({
     },
   },
   compatibilityDate: '2025-07-15',
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/rss.xml'],
+    },
+  },
   eslint: {
     config: {
       stylistic: true,
