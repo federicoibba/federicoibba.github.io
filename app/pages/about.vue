@@ -148,7 +148,7 @@
               GitHub
             </UButton>
           </template>
-        </UPageCta>
+        </UPageCTA>
       </div>
     </UPage>
   </UContainer>

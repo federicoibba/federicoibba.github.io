@@ -8,46 +8,122 @@
         :links
       />
 
-      <UPageSection
-        title="My Projects"
-        description="Here you will find all the projects I do in my spare time!"
-      >
-        <UCarousel
-          v-slot="{ item }"
-          :items="projects"
-          dots
-          class="cursor-pointer transition"
-          :ui="{ item: 'lg:basis-1/3' }"
-        >
-          <div
-            class="hover:text-primary w-full flex flex-col gap-4"
-            @click="$router.push(item.path)"
-          >
-            <div class="overflow-hidden rounded-lg">
-              <NuxtImg
-                class="object-cover object-top w-full transform transition-transform duration-200 hover:scale-110"
-                :src="item.meta.image"
-                width="640"
-              />
+      <div class="space-y-8">
+        <!-- Projects Card -->
+        <UCard>
+          <template #header>
+            <div class="flex items-center justify-between">
+              <div>
+                <h2 class="text-xl font-semibold">
+                  My Last Projects
+                </h2>
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  Here you will find all the projects I do in my spare time!
+                </p>
+              </div>
+              <UButton
+                to="/projects"
+                variant="outline"
+                size="sm"
+                trailing-icon="i-lucide-arrow-right"
+              >
+                View All
+              </UButton>
             </div>
-            <span class="mx-auto font-semibold text-lg">{{ item.title }}</span>
+          </template>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <UCard
+              v-for="project in projects"
+              :key="project.path"
+              class="cursor-pointer transition hover:bg-elevated/50"
+              @click="$router.push(project.path)"
+            >
+              <div class="space-y-3">
+                <div class="overflow-hidden rounded-lg">
+                  <NuxtImg
+                    class="object-cover object-top w-full h-32 transform transition-transform duration-200 hover:scale-110"
+                    :src="project.meta.image"
+                    width="320"
+                  />
+                </div>
+                <h3 class="font-semibold">
+                  {{ project.title }}
+                </h3>
+                <p class="text-sm text-gray-600 dark:text-gray-300 line-clamp-2">
+                  {{ project.description }}
+                </p>
+              </div>
+            </UCard>
           </div>
-        </UCarousel>
-      </UPageSection>
+        </UCard>
 
-      <UPageSection
-        title="Read my last article"
-      >
-        <UBlogPost
-          v-if="lastArticle"
-          orientation="horizontal"
-          :image="lastArticle.meta.image"
-          :title="lastArticle.title"
-          :description="lastArticle.description"
-          :date="lastArticle.meta.date"
-          :to="lastArticle.path"
-        />
-      </UPageSection>
+        <!-- Latest Article Card -->
+        <UCard>
+          <template #header>
+            <div class="flex items-center justify-between">
+              <div>
+                <h2 class="text-xl font-semibold">
+                  Latest Article
+                </h2>
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  Read my most recent blog post
+                </p>
+              </div>
+              <UButton
+                to="/articles"
+                variant="outline"
+                size="sm"
+                trailing-icon="i-lucide-arrow-right"
+              >
+                View All
+              </UButton>
+            </div>
+          </template>
+          <UBlogPost
+            v-if="lastArticle"
+            orientation="horizontal"
+            :image="lastArticle.meta.image"
+            :title="lastArticle.title"
+            :description="lastArticle.description"
+            :date="lastArticle.meta.date"
+            :to="lastArticle.path"
+          />
+        </UCard>
+
+        <!-- Contact Section -->
+        <UPageCTA
+          title="Let's Connect!"
+          description="Feel free to reach out for collaboration opportunities, technical discussions, or just to say hello."
+        >
+          <template #links>
+            <UButton
+              to="mailto:federico.ibba9+blog@gmail.com"
+              size="lg"
+              icon="i-heroicons-envelope"
+            >
+              Email Me
+            </UButton>
+            <UButton
+              to="https://linkedin.com/in/federicoibba"
+              target="_blank"
+              variant="outline"
+              size="lg"
+              icon="i-simple-icons-linkedin"
+            >
+              LinkedIn
+            </UButton>
+            <UButton
+              to="https://github.com/federicoibba"
+              target="_blank"
+              variant="outline"
+              size="sm"
+              icon="i-simple-icons-github"
+            >
+              GitHub
+            </UButton>
+          </template>
+        </UPageCTA>
+      </div>
     </UPage>
   </UContainer>
 </template>
