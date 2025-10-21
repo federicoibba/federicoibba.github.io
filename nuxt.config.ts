@@ -11,6 +11,9 @@ export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: true },
   app: {
+    // GitHub Pages deployment configuration
+    baseURL: '//',
+    buildAssetsDir: '_nuxt',
     pageTransition: { name: 'page', mode: 'out-in' },
   },
   css: ['~/assets/css/main.css'],
@@ -30,6 +33,8 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
+    // GitHub Pages deployment configuration
+    baseUrl: '/',
     locales: [
       { code: 'en', language: 'en-GB', name: 'English', file: 'en.json' },
       { code: 'it', language: 'it-IT', name: 'Italiano', file: 'it.json' },
