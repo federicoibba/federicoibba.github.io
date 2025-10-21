@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Il Viaggio di Fede nel Codice",
+    "title": "My Code Journey",
     "tagline": "Un posto sicuro dove condivido i miei pensieri, tutorial e progetti su sviluppo web e programmazione."
   },
   "navigation": {
@@ -10,7 +10,7 @@
   },
   "home": {
     "hero": {
-      "title": "Il Viaggio di Fede nel Codice",
+      "title": "My Code Journey",
       "description": "Un posto sicuro dove condivido i miei pensieri, tutorial e progetti su sviluppo web e programmazione."
     },
     "projects": {
@@ -89,12 +89,24 @@
     }
   },
   "footer": {
-    "title": "Il Viaggio di Fede nel Codice",
+    "title": "My Code Journey",
     "copyright": "© {year} Federico Ibba",
-    "followMe": "Seguimi sui miei canali principali!"
+    "followMe": "Seguimi sui miei canali!"
   },
   "common": {
     "viewAll": "Vedi Tutto",
     "resume": "Curriculum"
+  },
+  "errors": {
+    "404": {
+      "title": "404 - Pagina Non Trovata",
+      "description": "Spiacente, la pagina che stai cercando non esiste.",
+      "button": "Torna alla Home"
+    },
+    "500": {
+      "title": "Si è verificato un errore",
+      "description": "Qualcosa è andato storto. Riprova più tardi.",
+      "button": "Torna alla Home"
+    }
   }
 }

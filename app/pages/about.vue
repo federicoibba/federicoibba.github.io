@@ -41,7 +41,7 @@
       <div class="space-y-8">
         <!-- Introduction Section -->
         <AboutTextSection :title="$t('about.sections.introduction.title')">
-          <span v-html="$t('about.sections.introduction.content')"></span>
+          {{ $t('about.sections.introduction.content') }}
         </AboutTextSection>
 
         <!-- Goals Section -->

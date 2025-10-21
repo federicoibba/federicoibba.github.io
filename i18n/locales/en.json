@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Fede's Code Journey",
+    "title": "My Code Journey",
     "tagline": "A safeplace where I share my thoughts, tutorials and projects about web development and programming."
   },
   "navigation": {
@@ -10,7 +10,7 @@
   },
   "home": {
     "hero": {
-      "title": "Fede's Code Journey",
+      "title": "My Code Journey",
       "description": "A safeplace where I share my thoughts, tutorials and projects about web development and programming."
     },
     "projects": {
@@ -89,12 +89,24 @@
     }
   },
   "footer": {
-    "title": "Fede's Code Journey",
+    "title": "My Code Journey",
     "copyright": "© {year} Federico Ibba",
     "followMe": "Follow me on my main channels!"
   },
   "common": {
     "viewAll": "View All",
     "resume": "Resume"
+  },
+  "errors": {
+    "404": {
+      "title": "404 - Page Not Found",
+      "description": "Sorry, the page you are looking for does not exist.",
+      "button": "Go back to Home"
+    },
+    "500": {
+      "title": "Something Went Wrong",
+      "description": "An unexpected error has occurred. Please try again later.",
+      "button": "Go back to Home"
+    }
   }
 }
