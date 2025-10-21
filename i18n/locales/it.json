@@ -103,6 +103,16 @@
       "description": "Spiacente, la pagina che stai cercando non esiste.",
       "button": "Torna alla Home"
     },
+    "404-article": {
+      "title": "404 - Articolo Non Trovato",
+      "description": "Spiacente, l'articolo che stai cercando non esiste.",
+      "button": "Torna alla Home"
+    },
+    "404-project": {
+      "title": "404 - Progetto Non Trovato",
+      "description": "Spiacente, il progetto che stai cercando non esiste.",
+      "button": "Torna alla Home"
+    },
     "500": {
       "title": "Si è verificato un errore",
       "description": "Qualcosa è andato storto. Riprova più tardi.",

@@ -23,13 +23,10 @@
       </UPageHero>
       <ContentRenderer :value="project" />
     </template>
-    <UError
+    <AppError
       v-else
-      :error="{
-        statusCode: 404,
-        statusMessage: 'Project not found',
-        message: 'The project you are looking for does not exist.',
-      }"
+      :status-code="404"
+      :message="$t('errors.404-project.description')"
     />
   </UContainer>
 </template>

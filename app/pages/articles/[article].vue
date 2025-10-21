@@ -13,13 +13,10 @@
         <ContentRenderer :value="article" />
       </UPageBody>
     </UPage>
-    <UError
+    <AppError
       v-else
-      :error="{
-        statusCode: 404,
-        statusMessage: 'Article not found',
-        message: 'The article you are looking for does not exist.',
-      }"
+      :status-code="404"
+      :message="$t('errors.404-article.description')"
     />
   </UContainer>
 </template>
