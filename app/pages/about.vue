@@ -30,7 +30,7 @@
               target="_blank"
               variant="outline"
               size="sm"
-              icon="i-heroicons-document-arrow-down"
+              icon="i-lucide-file-user"
             >
               {{ $t('about.buttons.resume') }}
             </UButton>

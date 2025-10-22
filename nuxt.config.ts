@@ -1,3 +1,5 @@
+import { getDynamicRoutes } from './utils/prerender'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
@@ -31,6 +33,12 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
       routes: ['/', '/it', '/en'],
+    },
+  },
+  hooks: {
+    'nitro:config'(nitroConfig) {
+      const dynamicRoutes = getDynamicRoutes()
+      nitroConfig.prerender?.routes?.push(...dynamicRoutes)
     },
   },
   eslint: {

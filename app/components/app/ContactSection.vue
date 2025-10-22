@@ -7,7 +7,7 @@
       <UButton
         to="mailto:federico.ibba9+blog@gmail.com"
         size="lg"
-        icon="i-heroicons-envelope"
+        icon="i-lucide-mail"
       >
         {{ $t('contact.buttons.email') }}
       </UButton>

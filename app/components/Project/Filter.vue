@@ -3,7 +3,7 @@
     <UInput
       v-model="searchQuery"
       :placeholder="$t('projects.filter.placeholder')"
-      icon="i-heroicons-magnifying-glass"
+      icon="i-lucide-search"
       class="min-w-64"
     />
 

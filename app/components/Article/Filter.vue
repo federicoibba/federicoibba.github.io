@@ -4,7 +4,7 @@
       id="filter-articles"
       v-model="searchQuery"
       :placeholder="$t('articles.filter.placeholder')"
-      icon="i-heroicons-magnifying-glass"
+      icon="i-lucide-search"
     />
 
     <div class="flex flex-wrap gap-2">
