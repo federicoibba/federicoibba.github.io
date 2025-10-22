@@ -5,7 +5,7 @@
         :title="project.title"
         :description="project.description"
       >
-        <div class="flex w-full justify-center gap-4">
+        <div class="flex flex-wrap w-full justify-center gap-4">
           <UBadge
             v-for="tag in project.tags"
             :key="tag"

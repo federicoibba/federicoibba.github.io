@@ -1,5 +1,5 @@
 ---
-title: federicoibba.com - My Personal Blog
+title: Blog
 date: 2025-09-15
 description: How I've implemented the blog you're looking at right now
 image: /images/projects/blog.jpg

@@ -1,5 +1,5 @@
 ---
-title: federicoibba.com - Il Mio Blog Personale
+title: Blog
 date: 2025-09-15
 description: Come ho implementato il blog che stai guardando proprio ora
 image: /images/projects/blog.jpg
