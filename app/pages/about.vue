@@ -75,7 +75,7 @@
               view-all-link="https://drive.google.com/file/d/1IZY_RvkIN4t_S6CX7_rySdHV3PVaqe8I/view"
             />
           </template>
-          <UChangelogVersions :versions="journeyVersions" />
+          <UChangelogVersions :versions="translatedJourneyVersions" />
         </UCard>
 
         <!-- Contact Section -->
@@ -86,6 +86,18 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { techStack } from '~/constants/tech-stack'
 import { journeyVersions } from '~/constants/journey'
+
+const { t } = useI18n()
+
+const translatedJourneyVersions = computed(() => {
+  return journeyVersions.map(version => ({
+    ...version,
+    title: t(version.title!),
+    description: t(version.description!),
+  }))
+})
 </script>

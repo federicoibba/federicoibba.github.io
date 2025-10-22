@@ -121,5 +121,43 @@
       "description": "Qualcosa è andato storto. Riprova più tardi.",
       "button": "Torna alla Home"
     }
+  },
+  "journey": {
+    "softwareEngineer": {
+      "title": "Software Engineer",
+      "description": "Lavoro attuale dove uso Vue e Nuxt. Sono membro del Developer Experience Team e della Technical Decision Authority dell'azienda."
+    },
+    "frontendDeveloper": {
+      "title": "Sviluppatore Frontend",
+      "description": "Ho lavorato per due anni con applicazioni Angular e React"
+    },
+    "fullStackDeveloperMistralPay": {
+      "title": "Sviluppatore Full Stack",
+      "description": "Ho lavorato per sei mesi con applicazioni basate su React (pure e con Next.js), AWS (API Gateway, Lambda, S3, DynamoDB)"
+    },
+    "fullStackDeveloperUniversity": {
+      "title": "Sviluppatore Full Stack",
+      "description": "Ho lavorato per due anni creando dashboard di Business Intelligence usando Angular, ExpressJS, MySQL."
+    },
+    "masterDegree": {
+      "title": "Laurea Magistrale in Informatica",
+      "description": "Laurea con votazione 107/110."
+    },
+    "fellowResearch": {
+      "title": "Borsista di Ricerca",
+      "description": "Ho lavorato su applicazioni di Machine Learning: una basata su alberi decisionali e un algoritmo di classificazione della polarità dei messaggi basato su argomenti."
+    },
+    "teacher": {
+      "title": "Insegnante di Informatica per bambini",
+      "description": "Ho insegnato a bambini tra i 9 e gli 11 anni un linguaggio di programmazione visuale chiamato Scratch."
+    },
+    "bachelorDegree": {
+      "title": "Laurea Triennale in Informatica",
+      "description": "Laurea con votazione 107/110."
+    },
+    "earlyBeginnings": {
+      "title": "Primi Inizi",
+      "description": "Ho iniziato con i giochi MS-DOS all'età di 4 anni"
+    }
   }
 }

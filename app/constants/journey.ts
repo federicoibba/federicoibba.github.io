@@ -3,8 +3,8 @@ import type { ChangelogVersionProps } from '@nuxt/ui'
 export const journeyVersions: ChangelogVersionProps[] = [
   {
     date: 'Apr 2022',
-    title: 'Software Engineer',
-    description: 'Current job where I use Vue and Nuxt. I am member of the company Developer Experience Team and Technical Decision Authority.',
+    title: 'journey.softwareEngineer.title',
+    description: 'journey.softwareEngineer.description',
     authors: [{
       name: 'TUI Musement',
       avatar: {
@@ -15,8 +15,8 @@ export const journeyVersions: ChangelogVersionProps[] = [
   },
   {
     date: 'Mar 2020',
-    title: 'Frontend Developer',
-    description: 'Worked for two years with Angular and React applications',
+    title: 'journey.frontendDeveloper.title',
+    description: 'journey.frontendDeveloper.description',
     authors: [{
       name: 'Spindox',
       avatar: {
@@ -27,8 +27,8 @@ export const journeyVersions: ChangelogVersionProps[] = [
   },
   {
     date: 'Nov 2019',
-    title: 'Full Stack Developer',
-    description: 'Worked for six months with React-based applications (pure and with Next.js), AWS (API Gateway, Lambda, S3, DynamoDB)',
+    title: 'journey.fullStackDeveloperMistralPay.title',
+    description: 'journey.fullStackDeveloperMistralPay.description',
     authors: [{
       name: 'MistralPay',
       avatar: {
@@ -39,8 +39,8 @@ export const journeyVersions: ChangelogVersionProps[] = [
   },
   {
     date: 'Mar 2018',
-    title: 'Full Stack Developer',
-    description: 'Worked for two years creating Business Intelligence dashboards using Angular, ExpressJS, MySQL.',
+    title: 'journey.fullStackDeveloperUniversity.title',
+    description: 'journey.fullStackDeveloperUniversity.description',
     authors: [{
       name: 'Università degli Studi di Cagliari',
       avatar: {
@@ -51,8 +51,8 @@ export const journeyVersions: ChangelogVersionProps[] = [
   },
   {
     date: 'Feb 2018',
-    title: 'Master Degree in Computer Science',
-    description: 'Graduation with 107/110 score.',
+    title: 'journey.masterDegree.title',
+    description: 'journey.masterDegree.description',
     authors: [{
       name: 'Università degli Studi di Cagliari',
       avatar: {
@@ -63,8 +63,8 @@ export const journeyVersions: ChangelogVersionProps[] = [
   },
   {
     date: 'Jun 2017',
-    title: 'Fellow Research',
-    description: 'Worked on Machine Learning Applications: a decision-tree based one and a topic-based message polarity classification algorithm.',
+    title: 'journey.fellowResearch.title',
+    description: 'journey.fellowResearch.description',
     authors: [{
       name: 'Università degli Studi di Cagliari',
       avatar: {
@@ -75,8 +75,8 @@ export const journeyVersions: ChangelogVersionProps[] = [
   },
   {
     date: 'Mar 2017',
-    title: 'Teacher of Computer Science for kids',
-    description: 'Taught children aged between 9 and 11 years old a visual programming language called Scratch.',
+    title: 'journey.teacher.title',
+    description: 'journey.teacher.description',
     authors: [
       {
         name: 'Elementary School (Pula, Capoterra)',
@@ -89,8 +89,8 @@ export const journeyVersions: ChangelogVersionProps[] = [
   },
   {
     date: 'Sep 2015',
-    title: 'Bachelor Degree in Computer Science',
-    description: 'Graduation with 107/110 score.',
+    title: 'journey.bachelorDegree.title',
+    description: 'journey.bachelorDegree.description',
     authors: [{
       name: 'Università degli Studi di Cagliari',
       avatar: {
@@ -101,8 +101,8 @@ export const journeyVersions: ChangelogVersionProps[] = [
   },
   {
     date: '1997',
-    title: 'Early Beginnings',
-    description: 'Started with MS-DOS games at age 4',
+    title: 'journey.earlyBeginnings.title',
+    description: 'journey.earlyBeginnings.description',
     authors: [
       {
         name: 'Home',

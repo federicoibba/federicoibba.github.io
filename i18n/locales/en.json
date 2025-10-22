@@ -121,5 +121,43 @@
       "description": "An unexpected error has occurred. Please try again later.",
       "button": "Go back to Home"
     }
+  },
+  "journey": {
+    "softwareEngineer": {
+      "title": "Software Engineer",
+      "description": "Current job where I use Vue and Nuxt. I am member of the company Developer Experience Team and Technical Decision Authority."
+    },
+    "frontendDeveloper": {
+      "title": "Frontend Developer",
+      "description": "Worked for two years with Angular and React applications"
+    },
+    "fullStackDeveloperMistralPay": {
+      "title": "Full Stack Developer",
+      "description": "Worked for six months with React-based applications (pure and with Next.js), AWS (API Gateway, Lambda, S3, DynamoDB)"
+    },
+    "fullStackDeveloperUniversity": {
+      "title": "Full Stack Developer",
+      "description": "Worked for two years creating Business Intelligence dashboards using Angular, ExpressJS, MySQL."
+    },
+    "masterDegree": {
+      "title": "Master Degree in Computer Science",
+      "description": "Graduation with 107/110 score."
+    },
+    "fellowResearch": {
+      "title": "Fellow Research",
+      "description": "Worked on Machine Learning Applications: a decision-tree based one and a topic-based message polarity classification algorithm."
+    },
+    "teacher": {
+      "title": "Teacher of Computer Science for kids",
+      "description": "Taught children aged between 9 and 11 years old a visual programming language called Scratch."
+    },
+    "bachelorDegree": {
+      "title": "Bachelor Degree in Computer Science",
+      "description": "Graduation with 107/110 score."
+    },
+    "earlyBeginnings": {
+      "title": "Early Beginnings",
+      "description": "Started with MS-DOS games at age 4"
+    }
   }
 }
