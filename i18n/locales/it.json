@@ -8,6 +8,9 @@
     "projects": "Progetti",
     "about": "Chi sono"
   },
+  "contentToc": {
+    "title": "In questa pagina"
+  },
   "home": {
     "hero": {
       "title": "My Code Journey",
@@ -27,7 +30,7 @@
     }
   },
   "about": {
-    "title": "Chi Sono, Federico Ibba",
+    "title": "Federico Ibba",
     "description": "Ingegnere del Software appassionato di Sviluppo Web",
     "buttons": {
       "github": "GitHub",

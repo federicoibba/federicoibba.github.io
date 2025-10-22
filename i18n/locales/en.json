@@ -8,6 +8,9 @@
     "projects": "Projects",
     "about": "About me"
   },
+  "contentToc": {
+    "title": "On this page"
+  },
   "home": {
     "hero": {
       "title": "My Code Journey",
@@ -27,7 +30,7 @@
     }
   },
   "about": {
-    "title": "About Me, Federico Ibba",
+    "title": "Federico Ibba",
     "description": "Software Engineer passionate about Web Development",
     "buttons": {
       "github": "GitHub",

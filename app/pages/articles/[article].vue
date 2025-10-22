@@ -7,7 +7,10 @@
       />
       <NuxtImg :src="article.image" />
       <template #right>
-        <UContentToc :links="article.body.toc?.links" />
+        <UContentToc
+          :links="article.body.toc?.links"
+          :title="$t('contentToc.title')"
+        />
       </template>
       <UPageBody>
         <ContentRenderer :value="article" />
