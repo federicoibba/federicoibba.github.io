@@ -65,13 +65,13 @@ const links = computed<ButtonProps[]>(() => [
     to: `/${locale.value}/articles`,
     color: 'neutral',
     variant: 'subtle',
-    icon: 'i-lucide-book-open',
+    icon: 'lucide:book-open',
   },
   {
     label: t('home.buttons.seeProjects'),
     to: `/${locale.value}/projects`,
-    icon: 'i-lucide-terminal',
-    trailingIcon: 'i-lucide-arrow-right',
+    icon: 'lucide:terminal',
+    trailingIcon: 'lucide:arrow-right',
   },
 ])
 

@@ -4,7 +4,7 @@
       id="filter-articles"
       v-model="searchQuery"
       :placeholder="$t('articles.filter.placeholder')"
-      icon="i-lucide-search"
+      icon="lucide:search"
     />
 
     <div class="flex flex-wrap gap-2">

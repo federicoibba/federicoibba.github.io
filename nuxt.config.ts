@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     // Ensure @nuxt/content is after @nuxt/ui or no Prose components are availabe
     '@nuxt/content',
     '@nuxtjs/i18n',
+    '@nuxt/icon',
   ],
   ssr: true,
   devtools: { enabled: true },
@@ -56,5 +57,25 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
     langDir: 'locales/',
     strategy: 'prefix',
+  },
+  // Workaround for missing icons in @nuxt/icon after build
+  icon: {
+    clientBundle: {
+      icons: [
+        'lucide:arrow-right',
+        'lucide:book-a',
+        'lucide:book-open',
+        'lucide:book',
+        'lucide:check',
+        'lucide:file-user',
+        'lucide:home',
+        'lucide:mail',
+        'lucide:school',
+        'lucide:search',
+        'lucide:square-terminal',
+        'lucide:square-user',
+        'lucide:terminal',
+      ],
+    },
   },
 })

@@ -14,8 +14,8 @@
       :target="viewAllLink.startsWith('http') ? '_blank' : undefined"
       variant="outline"
       size="sm"
-      :icon="viewAllLink.includes('drive.google.com') ? 'i-lucide-file-user' : undefined"
-      trailing-icon="i-lucide-arrow-right"
+      :icon="viewAllLink.includes('drive.google.com') ? 'lucide:file-user' : undefined"
+      trailing-icon="lucide:arrow-right"
     >
       {{ viewAllLink.includes('drive.google.com') ? $t('common.resume') : $t('common.viewAll') }}
     </UButton>

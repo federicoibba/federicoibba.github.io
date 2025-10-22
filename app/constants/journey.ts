@@ -81,7 +81,7 @@ export const journeyVersions: ChangelogVersionProps[] = [
       {
         name: 'Elementary School (Pula, Capoterra)',
         avatar: {
-          icon: 'i-lucide-school',
+          icon: 'lucide:school',
           alt: 'Elementary School (Pula, Capoterra)',
         },
       },
@@ -107,7 +107,7 @@ export const journeyVersions: ChangelogVersionProps[] = [
       {
         name: 'Home',
         avatar: {
-          icon: 'i-lucide-home',
+          icon: 'lucide:home',
           alt: 'Home',
         },
       },

@@ -7,7 +7,7 @@
       <UButton
         to="mailto:federico.ibba9+blog@gmail.com"
         size="lg"
-        icon="i-lucide-mail"
+        icon="lucide:mail"
       >
         {{ $t('contact.buttons.email') }}
       </UButton>
@@ -16,7 +16,7 @@
         target="_blank"
         variant="outline"
         size="lg"
-        icon="i-simple-icons-linkedin"
+        icon="simple-icons:linkedin"
       >
         {{ $t('contact.buttons.linkedin') }}
       </UButton>
@@ -25,7 +25,7 @@
         target="_blank"
         variant="outline"
         size="sm"
-        icon="i-simple-icons-github"
+        icon="simple-icons:github"
       >
         {{ $t('contact.buttons.github') }}
       </UButton>

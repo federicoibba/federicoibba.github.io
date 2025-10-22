@@ -44,17 +44,17 @@ const availableLocales = computed(() => {
 const items = computed<NavigationMenuItem[]>(() => [{
   label: t('navigation.articles'),
   to: `/${locale.value}/articles`,
-  icon: 'i-lucide-book-a',
+  icon: 'lucide:book-a',
   active: route.path.startsWith('/articles'),
 }, {
   label: t('navigation.projects'),
   to: `/${locale.value}/projects`,
-  icon: 'i-lucide-square-terminal',
+  icon: 'lucide:square-terminal',
   active: route.path.startsWith('/projects'),
 }, {
   label: t('navigation.about'),
   to: `/${locale.value}/about`,
-  icon: 'i-lucide-square-user',
+  icon: 'lucide:square-user',
   active: route.path.startsWith('/about'),
 }])
 </script>

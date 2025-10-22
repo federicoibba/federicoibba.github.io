@@ -12,7 +12,7 @@
               target="_blank"
               variant="outline"
               size="sm"
-              icon="i-simple-icons-github"
+              icon="simple-icons:github"
             >
               {{ $t('about.buttons.github') }}
             </UButton>
@@ -21,7 +21,7 @@
               target="_blank"
               variant="outline"
               size="sm"
-              icon="i-simple-icons-linkedin"
+              icon="simple-icons:linkedin"
             >
               {{ $t('about.buttons.linkedin') }}
             </UButton>
@@ -30,7 +30,7 @@
               target="_blank"
               variant="outline"
               size="sm"
-              icon="i-lucide-file-user"
+              icon="lucide:file-user"
             >
               {{ $t('about.buttons.resume') }}
             </UButton>

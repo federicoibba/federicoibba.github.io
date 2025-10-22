@@ -16,8 +16,8 @@ export default defineAppConfig({
       },
     },
     icons: {
-      folder: 'i-lucide-book',
-      folderOpen: 'i-lucide-book-open',
+      folder: 'lucide:book',
+      folderOpen: 'lucide:book-open',
     },
     navigationMenu: {
       slots: {
