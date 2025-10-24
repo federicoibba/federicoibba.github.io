@@ -3,6 +3,10 @@
     "title": "My Code Journey",
     "tagline": "Un posto sicuro dove condivido i miei pensieri, tutorial e progetti su sviluppo web e programmazione."
   },
+  "nuxtSiteConfig": {
+    "name": "Federico Ibba - Portfolio & Blog",
+    "description": "Benvenuto nel mio portfolio personale e blog! Sono Federico Ibba, uno sviluppatore appassionato e un entusiasta della tecnologia. Qui troverai i miei ultimi progetti, articoli e approfondimenti sul mondo della tecnologia."
+  },
   "navigation": {
     "articles": "Articoli",
     "projects": "Progetti",

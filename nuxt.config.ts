@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/i18n',
     '@nuxt/icon',
+    '@nuxtjs/seo',
   ],
   ssr: true,
   devtools: { enabled: true },
@@ -20,6 +21,12 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
   },
   css: ['~/assets/css/main.css'],
+  site: {
+    title: 'Federico Ibba - Portfolio & Blog',
+    description:
+      'Welcome to my personal portfolio and blog! I am Federico Ibba, a passionate developer and tech enthusiast. Here you will find my latest projects, articles, and insights into the world of technology.',
+    url: 'https://federicoibba.com',
+  },
   content: {
     build: {
       markdown: {
@@ -49,7 +56,7 @@ export default defineNuxtConfig({
   },
   i18n: {
     // GitHub Pages deployment configuration
-    baseUrl: '/',
+    baseUrl: 'https://federicoibba.com',
     locales: [
       { code: 'en', language: 'en-GB', name: 'English', file: 'en.json' },
       { code: 'it', language: 'it-IT', name: 'Italiano', file: 'it.json' },
