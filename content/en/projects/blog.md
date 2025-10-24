@@ -6,6 +6,7 @@ image: /images/projects/blog.jpg
 alt: Personal Federico Ibba blog
 ogImage: /images/projects/blog.jpg
 tags: ['javascript', 'typescript', 'nuxt', 'vue', 'nuxt/ui', 'nuxt/content']
+technologies: ['javascript', 'typescript', 'nuxt', 'vue', 'nuxt/ui', 'nuxt/content']
 locale: 'en'
 ---
 

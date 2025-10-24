@@ -5,8 +5,9 @@ description: Come ho implementato il blog che stai guardando proprio ora
 image: /images/projects/blog.jpg
 alt: Blog personale di Federico Ibba
 ogImage: /images/projects/blog.jpg
-tags: ['javascript', 'typescript', 'nuxt', 'vue', 'nuxt/ui', 'nuxt/content']
+tags: ['javascript', 'typescript', 'nuxt', 'vue']
 locale: 'it'
+technologies: ['typescript', 'vue', 'nuxt', 'nuxt/ui', 'nuxt/content']
 ---
 
 ### Descrizione

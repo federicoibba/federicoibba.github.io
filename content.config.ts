@@ -29,6 +29,7 @@ export default defineContentConfig({
         ogImage: z.string(),
         tags: z.array(z.string()),
         locale: z.string(),
+        technologies: z.array(z.string()),
       }),
     }),
   },

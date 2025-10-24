@@ -6,6 +6,7 @@ image: /images/projects/rag.jpg
 alt: LLM RAG for Food nutritional information
 ogImage: /images/projects/food-rag.jpg
 tags: ['llm', 'rag', 'openai']
+technologies: ['python', 'jupyter', 'llm', 'modal', 'fastapi']
 locale: 'en'
 ---
 

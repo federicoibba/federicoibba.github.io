@@ -5,21 +5,21 @@
         :title="project.title"
         :description="project.description"
       >
-        <div class="flex flex-wrap w-full justify-center gap-4">
-          <UBadge
-            v-for="tag in project.tags"
-            :key="tag"
-            size="xl"
-          >
-            {{ tag }}
-          </UBadge>
-        </div>
         <NuxtImg
           :src="project.image"
           class="rounded-lg mx-auto"
           fit="contain"
           sizes="100vw sm:50vw md:800px"
         />
+        <div class="flex flex-wrap w-full justify-center gap-4">
+          <UBadge
+            v-for="tech in project.technologies"
+            :key="tech"
+            size="xl"
+          >
+            {{ tech }}
+          </UBadge>
+        </div>
       </UPageHero>
       <ContentRenderer :value="project" />
     </template>
