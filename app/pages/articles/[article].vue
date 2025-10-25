@@ -5,15 +5,21 @@
         :title="article.title"
         :description="article.description"
       />
-      <NuxtImg :src="article.image" />
+      <NuxtImg
+        :src="article.image"
+        class="rounded-lg"
+      />
       <template #right>
         <UContentToc
           :links="article.body.toc?.links"
           :title="$t('contentToc.title')"
         />
       </template>
-      <UPageBody>
-        <ContentRenderer :value="article" />
+      <UPageBody class="prose-p:text-xl">
+        <ContentRenderer
+          :value="article"
+          class="text-lg text-justify [&>h3]:text-xl"
+        />
       </UPageBody>
     </UPage>
     <AppError

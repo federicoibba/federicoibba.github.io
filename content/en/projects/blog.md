@@ -1,23 +1,29 @@
 ---
 title: Blog
 date: 2025-09-15
-description: How I've implemented the blog you're looking at right now
+description: How I've implemented my personal blog and portfolio
 image: /images/projects/blog.jpg
 alt: Personal Federico Ibba blog
 ogImage: /images/projects/blog.jpg
-tags: ['javascript', 'typescript', 'nuxt', 'vue', 'nuxt/ui', 'nuxt/content']
+tags: ['javascript', 'typescript', 'nuxt', 'vue']
 technologies: ['javascript', 'typescript', 'nuxt', 'vue', 'nuxt/ui', 'nuxt/content']
+github: 'https://github.com/federicoibba/federicoibba.github.io'
 locale: 'en'
 ---
 
 ### Description
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lorem quam, sodales in mi ut, condimentum volutpat turpis. Integer scelerisque placerat eros, in auctor erat venenatis quis. Nam vehicula lorem purus, eu facilisis arcu volutpat et. Nullam in arcu sit amet leo mollis viverra. Suspendisse potenti. Integer mollis nunc nisl. Curabitur bibendum vulputate turpis vitae rutrum. Aliquam sem metus, tincidunt at urna quis, sagittis vulputate risus. Phasellus tempus erat nec elementum accumsan. Duis volutpat dui tincidunt porta lacinia.
+During all my career as frontend engineer, I always wanted to realize my personal blog and portfolio: create a place to show my 
+projects and to share my thoughts, ideas and hopes. You can imagine that myy very first attempt of building my own portfolio can be traced back in 2019, where I was exploring Static Site Generation in React.
 
-Vestibulum at est sollicitudin nulla consectetur cursus. Praesent sagittis dapibus sem et pulvinar. Maecenas ut lectus ut arcu porta mollis in sit amet diam. Vivamus viverra lacus et tellus tempor, eu pharetra magna ultricies. Sed vulputate ac lorem id dictum. Aenean vitae velit ut erat lacinia semper. Donec augue ligula, suscipit eu neque id, interdum tincidunt velit. Maecenas neque felis, euismod non arcu eu, ultrices condimentum turpis. Pellentesque tempor consectetur ante, nec consequat magna placerat id. Fusce ultrices a ante id ullamcorper. Aliquam eu tempus mi. Aenean ultricies dui odio, at condimentum mauris placerat nec. Nullam mollis ex non est mattis interdum. Sed commodo mauris augue, sit amet tincidunt ligula egestas a. Nam placerat sem a mollis pharetra.
+### Nuxt ecosystem
 
-Nullam purus metus, tincidunt non risus ut, scelerisque venenatis tortor. Nam at nisi vehicula, dapibus augue at, porta erat. Nunc ullamcorper nulla tellus, nec vulputate ex luctus ac. Ut ultrices justo vitae ipsum pellentesque porttitor. Aliquam erat volutpat. Nam at imperdiet erat, id faucibus diam. Nam euismod, magna non interdum rutrum, sem augue mattis turpis, imperdiet auctor lectus mauris a felis.
+In the last three years as Software Engineer in TUI Musement, I've been using Nuxt as framework in frontend projects, so it was easy to choose where to start my project. Moreover, with the release of <a href="https://nuxt.com/blog/nuxt-ui-v4" target="_blank">Nuxt UI v4</a>, 
+a lot of components that were under payment license have being released open source, so for me this was the occasion for both testing and knowing better this new library version.
 
-Fusce sem velit, posuere vel nibh at, dapibus pulvinar libero. Nulla ipsum mauris, semper et sem vitae, accumsan congue mi. Nullam auctor tincidunt elit, eu fermentum mi semper vitae. Vestibulum vitae sapien at lorem tincidunt tincidunt. Suspendisse non varius turpis, vitae sagittis ipsum. Sed ac dictum enim. Etiam tempor lorem diam, ut sodales magna egestas molestie. Cras efficitur est tincidunt tristique sagittis. Cras rutrum scelerisque maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut rhoncus facilisis sodales. Etiam ipsum quam, dignissim vel risus ut, placerat gravida justo. Sed molestie ex id ante iaculis lobortis.
+At the same time, Nuxt ecosystem comprehends <a href="https://content.nuxt.com/" target="_blank">Nuxt Content</a>, a git-based headless Content Management System (CMS) that works as a module for the Nuxt framework. It enables everyone to build content-driven websites by managing content directly through files in a `content/` directory. In my case, I've identified two different contents:
 
-Fusce egestas ligula nec quam ornare mollis. Nulla luctus hendrerit fermentum. Suspendisse sed libero consectetur, euismod libero ac, tincidunt erat. Curabitur lobortis commodo ex, eu sollicitudin diam blandit eget. Sed a bibendum purus. Sed nisi mauris, convallis et urna luctus, fringilla sollicitudin lectus. Cras malesuada rutrum metus viverra placerat. Sed hendrerit tincidunt consectetur. Maecenas nec neque efficitur, pretium ipsum sit amet, malesuada purus. Nunc dictum, ipsum ullamcorper tempus euismod, nisi odio convallis erat, a molestie libero urna posuere turpis. Phasellus convallis eu elit nec placerat. Aliquam sed egestas orci.
+- **projects**: like the page you're reading right now, it introduces a project made with tech specifications;
+- **articles**: a blog article in which I talk about something I've implemented and thoughts, reasoning and ideas that led me to some directions.
+
+

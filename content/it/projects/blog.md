@@ -6,8 +6,9 @@ image: /images/projects/blog.jpg
 alt: Blog personale di Federico Ibba
 ogImage: /images/projects/blog.jpg
 tags: ['javascript', 'typescript', 'nuxt', 'vue']
-locale: 'it'
 technologies: ['typescript', 'vue', 'nuxt', 'nuxt/ui', 'nuxt/content']
+github: 'https://github.com/federicoibba/federicoibba.github.io'
+locale: 'it'
 ---
 
 ### Descrizione

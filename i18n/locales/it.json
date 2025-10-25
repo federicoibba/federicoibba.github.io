@@ -81,6 +81,7 @@
     "filter": {
       "placeholder": "Cerca progetti..."
     },
+    "technologies": "Tecnologie Utilizzate",
     "all": {
       "title": "Tutti i Progetti",
       "description": "Filtra ed esplora i miei progetti"

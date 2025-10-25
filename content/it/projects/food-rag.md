@@ -7,6 +7,7 @@ alt: LLM RAG per informazioni nutrizionali sui cibi
 ogImage: /images/projects/food-rag.jpg
 tags: ['llm', 'rag', 'openai']
 technologies: ['llm', 'rag', 'openai']
+github: https://github.com/federicoibba/nutritional-information-rag
 locale: 'it'
 ---
 

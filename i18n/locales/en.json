@@ -81,6 +81,7 @@
     "filter": {
       "placeholder": "Search projects..."
     },
+    "technologies": "Technologies Used",
     "all": {
       "title": "All Projects",
       "description": "Filter and explore my projects"
