@@ -22,6 +22,7 @@
         />
       </UPageBody>
     </UPage>
+    <AppItemSkeleton v-else-if="isLoading" />
     <AppError
       v-else
       :status-code="404"
@@ -33,8 +34,12 @@
 <script lang="ts" setup>
 const { path } = useRoute()
 
-const { data: article } = await useAsyncData(`blog-post-${path}`, () =>
+const { data: article, status } = await useAsyncData(`blog-post-${path}`, () =>
   queryCollection('articles').path(path).first(),
+)
+
+const isLoading = computed(
+  () => status.value === 'pending' || status.value === 'idle',
 )
 
 useHead({

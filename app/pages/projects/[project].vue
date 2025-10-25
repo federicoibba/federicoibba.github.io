@@ -17,6 +17,7 @@
         class="text-lg text-justify [&>h3]:text-xl"
       />
     </UPage>
+    <AppItemSkeleton v-else-if="isLoading" />
     <AppError
       v-else
       :status-code="404"
@@ -29,9 +30,13 @@
 const { path } = useRoute()
 const { locale } = useI18n()
 
-const { data: project } = await useAsyncData(
+const { data: project, status } = await useAsyncData(
   `project-${path}`,
   () => queryCollection('projects').where('locale', '=', locale.value).path(path).first(),
+)
+
+const isLoading = computed(
+  () => status.value === 'pending' || status.value === 'idle',
 )
 
 useHead({

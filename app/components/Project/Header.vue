@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row flex-wrap lg:flex-nowrap gap-8 p-8 justify-center">
+  <div class="flex flex-row flex-wrap lg:flex-nowrap gap-8 py-8 justify-center">
     <NuxtImg
       :src="project.image"
       class="rounded-lg"
