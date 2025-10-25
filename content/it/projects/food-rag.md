@@ -4,7 +4,6 @@ date: 2025-09-15
 description: Creazione di una strategia LLM per recuperare informazioni nutrizionali sui cibi
 image: /images/projects/rag.jpg
 alt: LLM RAG per informazioni nutrizionali sui cibi
-ogImage: /images/projects/food-rag.jpg
 tags: ['llm', 'rag', 'openai']
 technologies: ['llm', 'rag', 'openai']
 github: https://github.com/federicoibba/nutritional-information-rag

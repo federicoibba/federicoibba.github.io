@@ -5,7 +5,22 @@
   },
   "nuxtSiteConfig": {
     "name": "Federico Ibba - Portfolio & Blog",
-    "description": "Benvenuto nel mio portfolio personale e blog! Sono Federico Ibba, uno sviluppatore appassionato e un entusiasta della tecnologia. Qui troverai i miei ultimi progetti, articoli e approfondimenti sul mondo della tecnologia."
+    "description": "Benvenuto nel mio portfolio personale e blog! Sono Federico Ibba, uno sviluppatore appassionato ed entusiasta della tecnologia. Qui troverai i miei ultimi progetti, articoli e approfondimenti sul mondo della tecnologia."
+  },
+    "ogSite": {
+    "title": "Federico Ibba - Portfolio & Blog",
+    "home": {
+      "description": "Benvenuto nel mio portfolio personale e blog! Sono Federico Ibba, uno sviluppatore appassionato ed entusiasta della tecnologia"
+    },
+    "about": {
+      "description": "Scopri di più sul mio percorso come Ingegnere del Software, le mie competenze e le mie tappe professionali ed educative."
+    },
+    "articles": {
+      "description": "Leggi i miei ultimi pensieri, tutorial e approfondimenti su sviluppo web, programmazione e tecnologia."
+    },
+    "projects": {
+      "description": "Esplora la raccolta dei miei progetti personali e professionali."
+    }
   },
   "navigation": {
     "articles": "Articoli",

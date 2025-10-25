@@ -4,7 +4,6 @@ date: 2025-09-15
 description: Creation of an LLM strategy for retrieving nutritional information about food
 image: /images/projects/rag.jpg
 alt: LLM RAG for Food nutritional information
-ogImage: /images/projects/food-rag.jpg
 tags: ['llm', 'rag', 'openai']
 technologies: ['python', 'jupyter', 'llm', 'modal', 'fastapi']
 github: https://github.com/federicoibba/nutritional-information-rag

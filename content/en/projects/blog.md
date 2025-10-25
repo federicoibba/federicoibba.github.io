@@ -4,7 +4,6 @@ date: 2025-09-15
 description: How I've implemented my personal blog and portfolio
 image: /images/projects/blog.jpg
 alt: Personal Federico Ibba blog
-ogImage: /images/projects/blog.jpg
 tags: ['javascript', 'typescript', 'nuxt', 'vue']
 technologies: ['javascript', 'typescript', 'nuxt', 'vue', 'nuxt/ui', 'nuxt/content']
 github: 'https://github.com/federicoibba/federicoibba.github.io'

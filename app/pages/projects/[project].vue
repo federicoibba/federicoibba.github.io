@@ -47,6 +47,6 @@ useHead({
 defineOgImageComponent('Content', {
   title: project.value?.title || 'Project',
   description: project.value?.description || 'Project description',
-  image: project.value?.ogImage || '',
+  image: project.value?.image || '',
 })
 </script>
