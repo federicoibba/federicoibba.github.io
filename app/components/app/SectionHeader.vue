@@ -16,6 +16,7 @@
       size="sm"
       :icon="viewAllLink.includes('drive.google.com') ? 'lucide:file-user' : undefined"
       trailing-icon="lucide:arrow-right"
+      class="whitespace-nowrap ml-2 self-baseline"
     >
       {{ viewAllLink.includes('drive.google.com') ? $t('common.resume') : $t('common.viewAll') }}
     </UButton>

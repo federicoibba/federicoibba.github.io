@@ -56,7 +56,22 @@
 </template>
 
 <script setup lang="ts">
-const { locale } = useI18n()
+const { locale, t } = useI18n()
+
+useHead({
+  title: t('pages.articles.title'),
+  meta: [
+    {
+      name: 'description',
+      content: t('pages.articles.description'),
+    },
+  ],
+})
+
+defineOgImageComponent('Content', {
+  title: t('ogSite.title'),
+  description: t('ogSite.articles.description'),
+})
 
 const { data: articles } = await useAsyncData(`articles-list-${locale.value}`, () => {
   return queryCollection('articles')

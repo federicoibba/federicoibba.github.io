@@ -59,6 +59,21 @@ import type { ButtonProps } from '@nuxt/ui'
 
 const { t, locale } = useI18n()
 
+useHead({
+  title: t('pages.home.title'),
+  meta: [
+    {
+      name: 'description',
+      content: t('pages.home.description'),
+    },
+  ],
+})
+
+defineOgImageComponent('Content', {
+  title: t('ogSite.title'),
+  description: t('ogSite.home.description'),
+})
+
 const links = computed<ButtonProps[]>(() => [
   {
     label: t('home.buttons.readBlog'),

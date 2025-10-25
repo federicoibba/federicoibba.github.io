@@ -29,7 +29,22 @@
 <script setup lang="ts">
 import type { ProjectsCollectionItem } from '@nuxt/content'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
+
+useHead({
+  title: t('pages.projects.title'),
+  meta: [
+    {
+      name: 'description',
+      content: t('pages.projects.description'),
+    },
+  ],
+})
+
+defineOgImageComponent('Content', {
+  title: t('ogSite.title'),
+  description: t('ogSite.projects.description'),
+})
 
 const { data: projects } = await useAsyncData(`projects-list-${locale.value}`, () => {
   return queryCollection('projects')

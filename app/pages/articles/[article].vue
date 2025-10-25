@@ -36,4 +36,20 @@ const { path } = useRoute()
 const { data: article } = await useAsyncData(`blog-post-${path}`, () =>
   queryCollection('articles').path(path).first(),
 )
+
+useHead({
+  title: () => article.value?.title || 'Article',
+  meta: [
+    {
+      name: 'description',
+      content: () => article.value?.description || 'Article description',
+    },
+  ],
+})
+
+defineOgImageComponent('Content', {
+  title: article.value?.title || 'Article',
+  description: article.value?.description || 'Article description',
+  image: article.value?.ogImage || '',
+})
 </script>

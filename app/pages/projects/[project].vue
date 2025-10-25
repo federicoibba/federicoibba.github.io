@@ -33,4 +33,20 @@ const { data: project } = await useAsyncData(
   `project-${path}`,
   () => queryCollection('projects').where('locale', '=', locale.value).path(path).first(),
 )
+
+useHead({
+  title: () => project.value?.title || 'Project',
+  meta: [
+    {
+      name: 'description',
+      content: () => project.value?.description || 'Project description',
+    },
+  ],
+})
+
+defineOgImageComponent('Content', {
+  title: project.value?.title || 'Project',
+  description: project.value?.description || 'Project description',
+  image: project.value?.ogImage || '',
+})
 </script>

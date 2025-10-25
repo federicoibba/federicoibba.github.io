@@ -93,6 +93,21 @@ import { journeyVersions } from '~/constants/journey'
 
 const { t } = useI18n()
 
+useHead({
+  title: t('pages.about.title'),
+  meta: [
+    {
+      name: 'description',
+      content: t('pages.about.description'),
+    },
+  ],
+})
+
+defineOgImageComponent('Content', {
+  title: t('ogSite.title'),
+  description: t('ogSite.about.description'),
+})
+
 const translatedJourneyVersions = computed(() => {
   return journeyVersions.map(version => ({
     ...version,

@@ -22,9 +22,6 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.css'],
   site: {
-    title: 'Federico Ibba - Portfolio & Blog',
-    description:
-      'Welcome to my personal portfolio and blog! I am Federico Ibba, a passionate developer and tech enthusiast. Here you will find my latest projects, articles, and insights into the world of technology.',
     url: 'https://federicoibba.com',
   },
   content: {
@@ -87,5 +84,8 @@ export default defineNuxtConfig({
         'lucide:x',
       ],
     },
+  },
+  seo: {
+    automaticDefaults: false,
   },
 })
