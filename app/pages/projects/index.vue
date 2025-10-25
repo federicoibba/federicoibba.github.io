@@ -2,6 +2,7 @@
   <UContainer>
     <UPage>
       <UPageHeader
+        class="border-0"
         :title="$t('projects.title')"
         :description="$t('projects.description')"
       />
