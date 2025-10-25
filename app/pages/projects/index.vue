@@ -6,29 +6,21 @@
         :description="$t('projects.description')"
       />
 
-      <UCard>
-        <template #header>
-          <AppSectionHeader
-            :title="$t('projects.all.title')"
-            :description="$t('projects.all.description')"
+      <div class="space-y-6">
+        <ProjectFilter
+          v-model:search-query="searchQuery"
+          v-model:selected-tags="selectedTags"
+          :all-tags="allTags"
+          @toggle-tag="toggleTag"
+        />
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <ProjectCard
+            v-for="project in filteredProjects"
+            :key="project.path"
+            :project="project"
           />
-        </template>
-        <div class="space-y-6">
-          <ProjectFilter
-            v-model:search-query="searchQuery"
-            v-model:selected-tags="selectedTags"
-            :all-tags="allTags"
-            @toggle-tag="toggleTag"
-          />
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <ProjectCard
-              v-for="project in filteredProjects"
-              :key="project.path"
-              :project="project"
-            />
-          </div>
         </div>
-      </UCard>
+      </div>
     </UPage>
   </UContainer>
 </template>
