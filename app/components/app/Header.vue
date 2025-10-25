@@ -45,16 +45,16 @@ const items = computed<NavigationMenuItem[]>(() => [{
   label: t('navigation.articles'),
   to: `/${locale.value}/articles`,
   icon: 'lucide:book-a',
-  active: route.path.startsWith('/articles'),
+  active: route.path.startsWith(`/${locale.value}/articles`),
 }, {
   label: t('navigation.projects'),
   to: `/${locale.value}/projects`,
   icon: 'lucide:square-terminal',
-  active: route.path.startsWith('/projects'),
+  active: route.path.startsWith(`/${locale.value}/projects`),
 }, {
   label: t('navigation.about'),
   to: `/${locale.value}/about`,
   icon: 'lucide:square-user',
-  active: route.path.startsWith('/about'),
+  active: route.path.startsWith(`/${locale.value}/about`),
 }])
 </script>

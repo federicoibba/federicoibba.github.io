@@ -84,6 +84,7 @@ export default defineNuxtConfig({
         'lucide:square-terminal',
         'lucide:square-user',
         'lucide:terminal',
+        'lucide:x',
       ],
     },
   },
