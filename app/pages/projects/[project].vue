@@ -25,16 +25,14 @@
             {{ project.description }}
           </p>
           <UButton
-            v-for="link in links"
-            :key="link.label"
-            :icon="link.icon"
-            :to="link.to"
-            :target="link.target"
+            icon="i-simple-icons-github"
+            :to="project.github"
+            target="_blank"
             class="w-fit"
             size="lg"
             color="primary"
           >
-            {{ link.label }}
+            Github
           </UButton>
           <div class="hidden lg:flex flex-col">
             <h2 class="text-xl md:text-2xl font-semibold mb-2">
@@ -76,17 +74,4 @@ const { data: project } = await useAsyncData(
   `project-${path}`,
   () => queryCollection('projects').where('locale', '=', locale.value).path(path).first(),
 )
-
-const links = computed(() => {
-  const links = []
-  // if (project.value?.github) {
-  links.push({
-    label: 'GitHub',
-    icon: 'i-simple-icons-github',
-    to: 'https://github.com/federicoibba/federicoibba.github.io',
-    target: '_blank',
-  })
-  // }
-  return links
-})
 </script>

@@ -14,7 +14,7 @@ locale: 'en'
 ### Description
 
 During all my career as frontend engineer, I always wanted to realize my personal blog and portfolio: create a place to show my 
-projects and to share my thoughts, ideas and hopes. You can imagine that myy very first attempt of building my own portfolio can be traced back in 2019, where I was exploring Static Site Generation in React.
+projects and to share my thoughts, ideas and hopes. You can imagine that myy very first attempt of building my own portfolio can be traced back in 2019, where I was exploring Static Site Generation in React using Gatsby.
 
 ### Nuxt ecosystem
 
