@@ -6,7 +6,7 @@
         :description="$t('articles.description')"
       />
       <template #right>
-        <nav class="flex flex-col gap-8">
+        <nav class="hidden lg:flex flex-col gap-8">
           <div class="flex flex-col gap-8 sticky top-(--ui-header-height) z-10 pt-4 sm:pt-6">
             <UCard>
               <ArticleFilter
@@ -24,7 +24,6 @@
                 />
               </template>
               <ArticleTimeline
-                class="hidden lg:block"
                 :articles="filteredArticles"
               />
             </UCard>
@@ -32,25 +31,25 @@
         </nav>
       </template>
 
-      <UCard>
-        <template #header>
-          <AppSectionHeader
-            :title="$t('articles.all.title')"
-            :description="$t('articles.all.description')"
-          />
-        </template>
-        <UBlogPosts orientation="vertical">
-          <UBlogPost
-            v-for="(post, index) in filteredArticles"
-            :key="index"
-            :image="post.image"
-            :title="post.title"
-            :description="post.description"
-            :date="post.date"
-            :to="post.path"
-          />
-        </UBlogPosts>
+      <UCard class="mb-4 sm:mb-6 lg:hidden">
+        <ArticleFilter
+          v-model:search-query="searchQuery"
+          v-model:selected-tags="selectedTags"
+          :all-tags="allTags"
+          @toggle-tag="toggleTag"
+        />
       </UCard>
+      <UBlogPosts orientation="vertical">
+        <UBlogPost
+          v-for="(post, index) in filteredArticles"
+          :key="index"
+          :image="post.image"
+          :title="post.title"
+          :description="post.description"
+          :date="post.date"
+          :to="post.path"
+        />
+      </UBlogPosts>
     </UPage>
   </UContainer>
 </template>

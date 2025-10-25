@@ -34,6 +34,8 @@
 </template>
 
 <script setup lang="ts">
+import type { ProjectsCollectionItem } from '@nuxt/content'
+
 const { locale } = useI18n()
 
 const { data: projects } = await useAsyncData(`projects-list-${locale.value}`, () => {
@@ -43,5 +45,6 @@ const { data: projects } = await useAsyncData(`projects-list-${locale.value}`, (
     .all()
 })
 
-const { searchQuery, selectedTags, allTags, filteredItems: filteredProjects, toggleTag } = useFilterItems(projects)
+const { searchQuery, selectedTags, allTags, filteredItems, toggleTag } = useFilterItems(projects)
+const filteredProjects = filteredItems as Ref<ProjectsCollectionItem[]>
 </script>

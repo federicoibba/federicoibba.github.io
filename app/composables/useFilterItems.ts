@@ -1,7 +1,10 @@
-import type { ArticlesCollectionItem } from '@nuxt/content'
+import type { ArticlesCollectionItem, ProjectsCollectionItem } from '@nuxt/content'
+
+type CollectionItems = ArticlesCollectionItem[] | ProjectsCollectionItem[]
+type Items = Ref<CollectionItems | null | undefined>
 
 export const useFilterItems = (
-  items: Ref<ArticlesCollectionItem[] | null | undefined>,
+  items: Items,
 ) => {
   const searchQuery = ref('')
   const selectedTags = ref<string[]>([])
@@ -14,7 +17,7 @@ export const useFilterItems = (
     return Array.from(tags).sort()
   })
 
-  const filteredItems = computed(() => {
+  const filteredItems = computed((): CollectionItems => {
     if (!items.value) return []
 
     return items.value.filter((item) => {
