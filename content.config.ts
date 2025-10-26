@@ -29,6 +29,7 @@ export default defineContentConfig({
         locale: z.string(),
         technologies: z.array(z.string()),
         github: z.string(),
+        article: z.string().optional(),
       }),
     }),
   },
