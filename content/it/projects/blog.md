@@ -4,8 +4,8 @@ date: 2025-09-15
 description: Come ho implementato il mio blog e portfolio personale
 image: /images/projects/blog.jpg
 alt: Blog personale di Federico Ibba
-tags: ['javascript', 'typescript', 'nuxt', 'vue']
-technologies: ['javascript', 'typescript', 'nuxt', 'vue', 'nuxt/ui', 'nuxt/content']
+tags: ['Javascript', 'Typescript', 'Nuxt', 'Vue']
+technologies: ['Javascript', 'Typescript', 'Nuxt', 'Vue', 'Tailwind CSS']
 github: 'https://github.com/federicoibba/federicoibba.github.io'
 locale: 'it'
 ---
@@ -30,7 +30,7 @@ Nei miei ultimi tre anni presso TUI Musement, ho utilizzato Nuxt come framework 
 
 ### Nuxt i18n
 
-<a href="https://i18n.nuxtjs.org/" target="_blank">Nuxt i18n</a> mi ha aiutato a servire il sito web in due lingue, italiano e inglese. Fornisce una soluzione semplice per il routing prefix basato sulla lingua, evitando l'onere di gestire il path parameter della lingua.
+<a href="https://i18n.nuxtjs.org/" target="_blank">Nuxt i18n</a> mi ha aiutato a servire il sito web in due lingue, italiano e inglese. Fornisce una soluzione semplice per integrare il routing prefix basato sulla lingua.
 
 ### Nuxt SEO
 

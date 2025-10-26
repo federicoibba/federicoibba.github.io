@@ -4,8 +4,8 @@ date: 2025-09-15
 description: How I've implemented my personal blog and portfolio
 image: /images/projects/blog.jpg
 alt: Personal Federico Ibba blog
-tags: ['javascript', 'typescript', 'nuxt', 'vue']
-technologies: ['javascript', 'typescript', 'nuxt', 'vue', 'nuxt/ui', 'nuxt/content']
+tags: ['Javascript', 'Typescript', 'Nuxt', 'Vue']
+technologies: ['Javascript', 'Typescript', 'Nuxt', 'Vue', 'Tailwind CSS']
 github: 'https://github.com/federicoibba/federicoibba.github.io'
 locale: 'en'
 ---
@@ -30,7 +30,7 @@ In my last three years as a Software Engineer at TUI Musement, I've been using N
 
 ### Nuxt i18n
 
-<a href="https://i18n.nuxtjs.org/" target="_blank">Nuxt i18n</a> helped me serve the website in two languages, Italian and English. It provides a simple solution for language prefix-based routing, avoiding the burden of handling the language parameter in the path.
+<a href="https://i18n.nuxtjs.org/" target="_blank">Nuxt i18n</a> helped me serve the website in two languages, Italian and English. It provides a simple solution for implementing language prefix-based routing.
 
 ### Nuxt SEO
 

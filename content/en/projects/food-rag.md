@@ -4,8 +4,8 @@ date: 2024-07-20
 description: A RAG service to extract nutritional information for food items using both OpenAI and open-source models.
 image: /images/projects/rag.jpg
 alt: Nutritional Information RAG
-tags: ['python', 'rag', 'llm', 'openai', 'llama', 'qwen']
-technologies: ['python', 'mongodb', 'rag', 'llm', 'openai', 'llama', 'qwen', 'fastapi', 'modal']
+tags: ['Python', 'RAG', 'LLM', 'MongoDB', 'OpenAI', 'Llama', 'Qwen']
+technologies: ['Python', 'MongoDB', 'RAG', 'LLM', 'OpenAI', 'Llama', 'Qwen', 'FastAPI', 'modal']
 github: 'https://github.com/federicoibba/nutritional-information-rag'
 article: /a-nutritional-llm-assistant-using-rag
 locale: 'en'
