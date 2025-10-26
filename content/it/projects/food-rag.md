@@ -1,23 +1,32 @@
 ---
-title: RAG Alimentare usando LLM
-date: 2025-09-15
-description: Creazione di una strategia LLM per recuperare informazioni nutrizionali sui cibi
+title: RAG per Informazioni Nutrizionali
+date: 2024-07-20
+description: Un servizio RAG per estrarre informazioni nutrizionali per alimenti utilizzando sia modelli OpenAI che open-source.
 image: /images/projects/rag.jpg
-alt: LLM RAG per informazioni nutrizionali sui cibi
-tags: ['llm', 'rag', 'openai']
-technologies: ['llm', 'rag', 'openai']
-github: https://github.com/federicoibba/nutritional-information-rag
+alt: RAG per Informazioni Nutrizionali
+tags: ['python', 'rag', 'llm', 'openai', 'llama', 'qwen']
+technologies: ['python', 'rag', 'llm', 'openai', 'llama', 'qwen', 'fastapi', 'modal']
+github: 'https://github.com/federicoibba/nutritional-information-rag'
 locale: 'it'
 ---
 
-### Descrizione
+## Descrizione
 
-Un assistente nutrizionale intelligente che utilizza la tecnologia RAG (Retrieval-Augmented Generation) e OpenAI per fornire informazioni nutrizionali accurate sui cibi. Il sistema combina un database vettoriale con un modello linguistico per risposte precise e contestuali. Morbi lorem quam, sodales in mi ut, condimentum volutpat turpis. Integer scelerisque placerat eros, in auctor erat venenatis quis. Nam vehicula lorem purus, eu facilisis arcu volutpat et. Nullam in arcu sit amet leo mollis viverra. Suspendisse potenti. Integer mollis nunc nisl. Curabitur bibendum vulputate turpis vitae rutrum. Aliquam sem metus, tincidunt at urna quis, sagittis vulputate risus. Phasellus tempus erat nec elementum accumsan. Duis volutpat dui tincidunt porta lacinia.
+Questo progetto fornisce un servizio di Retrieval-Augmented Generation (RAG) per estrarre informazioni nutrizionali per alimenti utilizzando sia modelli OpenAI che open-source, tra cui Qwen e Llama. Il flusso di lavoro è organizzato in una serie di notebook Jupyter, servizi Python modulari e un servizio API.
 
-Vestibulum at est sollicitudin nulla consectetur cursus. Praesent sagittis dapibus sem et pulvinar. Maecenas ut lectus ut arcu porta mollis in sit amet diam. Vivamus viverra lacus et tellus tempor, eu pharetra magna ultricies. Sed vulputate ac lorem id dictum. Aenean vitae velit ut erat lacinia semper. Donec augue ligula, suscipit eu neque id, interdum tincidunt velit. Maecenas neque felis, euismod non arcu eu, ultrices condimentum turpis. Pellentesque tempor consectetur ante, nec consequat magna placerat id. Fusce ultrices a ante id ullamcorper. Aliquam eu tempus mi. Aenean ultricies dui odio, at condimentum mauris placerat nec. Nullam mollis ex non est mattis interdum. Sed commodo mauris augue, sit amet tincidunt ligula egestas a. Nam placerat sem a mollis pharetra.
+## Come funziona
 
-Nullam purus metus, tincidunt non risus ut, scelerisque venenatis tortor. Nam at nisi vehicula, dapibus augue at, porta erat. Nunc ullamcorper nulla tellus, nec vulputate ex luctus ac. Ut ultrices justo vitae ipsum pellentesque porttitor. Aliquam erat volutpat. Nam at imperdiet erat, id faucibus diam. Nam euismod, magna non interdum rutrum, sem augue mattis turpis, imperdiet auctor lectus mauris a felis.
+1.  **Preparazione dei dati:** Il dataset viene pulito e le colonne pertinenti vengono selezionate nel primo notebook.
+2.  **Creazione del Vector Store:** Le descrizioni degli alimenti vengono trasformate in vettori e archiviate in un database vettoriale per la ricerca semantica.
+3.  **Pipeline RAG:** Data una descrizione di un alimento, il sistema recupera le voci più pertinenti dal database vettoriale e utilizza un modello linguistico (OpenAI, Llama o Qwen) per estrarre le informazioni adeguate.
+4.  **Servizio API:** Il servizio basato su FastAPI espone un endpoint `/get_nutritional_data` (POST) che accetta la descrizione di un alimento e restituisce le informazioni nutrizionali in formato JSON. Sono disponibili sia i servizi basati su Llama che su Qwen.
 
-Fusce sem velit, posuere vel nibh at, dapibus pulvinar libero. Nulla ipsum mauris, semper et sem vitae, accumsan congue mi. Nullam auctor tincidunt elit, eu fermentum mi semper vitae. Vestibulum vitae sapien at lorem tincidunt tincidunt. Suspendisse non varius turpis, vitae sagittis ipsum. Sed ac dictum enim. Etiam tempor lorem diam, ut sodales magna egestas molestie. Cras efficitur est tincidunt tristique sagittis. Cras rutrum scelerisque maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut rhoncus facilisis sodales. Etiam ipsum quam, dignissim vel risus ut, placerat gravida justo. Sed molestie ex id ante iaculis lobortis.
+## Struttura del progetto
 
-Fusce egestas ligula nec quam ornare mollis. Nulla luctus hendrerit fermentum. Suspendisse sed libero consectetur, euismod libero ac, tincidunt erat. Curabitur lobortis commodo ex, eu sollicitudin diam blandit eget. Sed a bibendum purus. Sed nisi mauris, convallis et urna luctus, fringilla sollicitudin lectus. Cras malesuada rutrum metus viverra placerat. Sed hendrerit tincidunt consectetur. Maecenas nec neque efficitur, pretium ipsum sit amet, malesuada purus. Nunc dictum, ipsum ullamcorper tempus euismod, nisi odio convallis erat, a molestie libero urna posuere turpis. Phasellus convallis eu elit nec placerat. Aliquam sed egestas orci.
+*   `datasets/food.csv` e `datasets/food_dataset.csv`: dataset sulla nutrizione alimentare grezzi e processati utilizzati come fonte di dati per il progetto.
+*   `notebooks/`: la cartella contiene tutti gli esperimenti e la creazione del database vettoriale.
+*   `services/`: directory con tutti i servizi creati.
+
+## Deploy
+
+Il servizio è distribuito online utilizzando il servizio [modal.com](https://modal.com).
