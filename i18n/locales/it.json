@@ -122,19 +122,19 @@
   },
   "pages": {
     "home": {
-      "title": "Federico Ibba - Portfolio & Blog",
+      "title": "",
       "description": "Benvenuto nel mio portfolio personale e blog! Sono Federico Ibba, uno sviluppatore appassionato e un entusiasta della tecnologia. Qui troverai i miei ultimi progetti, articoli e approfondimenti sul mondo della tecnologia."
     },
     "about": {
-      "title": "Chi Sono - Federico Ibba",
+      "title": "Chi Sono",
       "description": "Scopri di più sul mio percorso come Ingegnere del Software, le mie competenze e le mie tappe professionali ed educative."
     },
     "articles": {
-      "title": "Articoli - Federico Ibba",
+      "title": "Articoli",
       "description": "Leggi i miei ultimi pensieri, tutorial e approfondimenti su sviluppo web, programmazione e tecnologia."
     },
     "projects": {
-      "title": "Progetti - Federico Ibba",
+      "title": "Progetti",
       "description": "Esplora una raccolta dei miei progetti personali e professionali, che mostrano le mie competenze nello sviluppo web e nell'ingegneria del software."
     }
   },

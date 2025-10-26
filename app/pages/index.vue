@@ -60,7 +60,6 @@ import type { ButtonProps } from '@nuxt/ui'
 const { t, locale } = useI18n()
 
 useHead({
-  title: t('pages.home.title'),
   meta: [
     {
       name: 'description',

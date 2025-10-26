@@ -86,6 +86,6 @@ export default defineNuxtConfig({
     },
   },
   seo: {
-    automaticDefaults: false,
+    automaticDefaults: true,
   },
 })
