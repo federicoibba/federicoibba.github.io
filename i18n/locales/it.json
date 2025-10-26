@@ -100,7 +100,8 @@
     "all": {
       "title": "Tutti i Progetti",
       "description": "Filtra ed esplora i miei progetti"
-    }
+    },
+    "read-article": "Articolo"
   },
   "contact": {
     "title": "Connettiamoci!",
