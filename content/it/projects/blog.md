@@ -1,23 +1,41 @@
 ---
 title: Blog
 date: 2025-09-15
-description: Come ho implementato il blog che stai guardando proprio ora
+description: Come ho implementato il mio blog e portfolio personale
 image: /images/projects/blog.jpg
 alt: Blog personale di Federico Ibba
 tags: ['javascript', 'typescript', 'nuxt', 'vue']
-technologies: ['typescript', 'vue', 'nuxt', 'nuxt/ui', 'nuxt/content']
+technologies: ['javascript', 'typescript', 'nuxt', 'vue', 'nuxt/ui', 'nuxt/content']
 github: 'https://github.com/federicoibba/federicoibba.github.io'
 locale: 'it'
 ---
 
-### Descrizione
+## Descrizione
 
-Questo è il mio blog personale dove condivido i miei pensieri, tutorial e progetti su sviluppo web e programmazione. È costruito con Nuxt 3, Vue 3 e Nuxt UI per un'esperienza moderna e reattiva. Morbi lorem quam, sodales in mi ut, condimentum volutpat turpis. Integer scelerisque placerat eros, in auctor erat venenatis quis. Nam vehicula lorem purus, eu facilisis arcu volutpat et. Nullam in arcu sit amet leo mollis viverra. Suspendisse potenti. Integer mollis nunc nisl. Curabitur bibendum vulputate turpis vitae rutrum. Aliquam sem metus, tincidunt at urna quis, sagittis vulputate risus. Phasellus tempus erat nec elementum accumsan. Duis volutpat dui tincidunt porta lacinia.
+Durante la mia carriera come frontender, ho sempre desiderato creare il mio blog e portfolio personale: un posto dove mostrare i miei progetti e condividere i miei pensieri, idee e aspirazioni. Il mio primissimo tentativo di costruire il mio portfolio risale al 2019, quando stavo esplorando la generazione di siti statici in React usando Gatsby.
 
-Vestibulum at est sollicitudin nulla consectetur cursus. Praesent sagittis dapibus sem et pulvinar. Maecenas ut lectus ut arcu porta mollis in sit amet diam. Vivamus viverra lacus et tellus tempor, eu pharetra magna ultricies. Sed vulputate ac lorem id dictum. Aenean vitae velit ut erat lacinia semper. Donec augue ligula, suscipit eu neque id, interdum tincidunt velit. Maecenas neque felis, euismod non arcu eu, ultrices condimentum turpis. Pellentesque tempor consectetur ante, nec consequat magna placerat id. Fusce ultrices a ante id ullamcorper. Aliquam eu tempus mi. Aenean ultricies dui odio, at condimentum mauris placerat nec. Nullam mollis ex non est mattis interdum. Sed commodo mauris augue, sit amet tincidunt ligula egestas a. Nam placerat sem a mollis pharetra.
+## Ecosistema Nuxt
 
-Nullam purus metus, tincidunt non risus ut, scelerisque venenatis tortor. Nam at nisi vehicula, dapibus augue at, porta erat. Nunc ullamcorper nulla tellus, nec vulputate ex luctus ac. Ut ultrices justo vitae ipsum pellentesque porttitor. Aliquam erat volutpat. Nam at imperdiet erat, id faucibus diam. Nam euismod, magna non interdum rutrum, sem augue mattis turpis, imperdiet auctor lectus mauris a felis.
+Nei miei ultimi tre anni presso TUI Musement, ho utilizzato Nuxt come framework principale per costruire nuovi progetti frontend, quindi è stata una scelta facile per il mio stesso progetto. L'ecosistema Nuxt è ricco di librerie e soluzioni che spesso hanno integrazioni già pronte anche tra di loro, il che semplifica l'esperienza di sviluppo.
 
-Fusce sem velit, posuere vel nibh at, dapibus pulvinar libero. Nulla ipsum mauris, semper et sem vitae, accumsan congue mi. Nullam auctor tincidunt elit, eu fermentum mi semper vitae. Vestibulum vitae sapien at lorem tincidunt tincidunt. Suspendisse non varius turpis, vitae sagittis ipsum. Sed ac dictum enim. Etiam tempor lorem diam, ut sodales magna egestas molestie. Cras efficitur est tincidunt tristique sagittis. Cras rutrum scelerisque maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut rhoncus facilisis sodales. Etiam ipsum quam, dignissim vel risus ut, placerat gravida justo. Sed molestie ex id ante iaculis lobortis.
+### Nuxt Content
+<a href="https://content.nuxt.com/" target="_blank">Nuxt Content</a> è un Content Management System (CMS) headless basato su git che funziona come un modulo per il framework Nuxt. Consente agli utenti di creare siti Web basati sui contenuti gestendoli direttamente tramite file in una cartella `content/`. Nel mio caso, scriverò file Markdown per due tipi di contenuto:
 
-Fusce egestas ligula nec quam ornare mollis. Nulla luctus hendrerit fermentum. Suspendisse sed libero consectetur, euismod libero ac, tincidunt erat. Curabitur lobortis commodo ex, eu sollicitudin diam blandit eget. Sed a bibendum purus. Sed nisi mauris, convallis et urna luctus, fringilla sollicitudin lectus. Cras malesuada rutrum metus viverra placerat. Sed hendrerit tincidunt consectetur. Maecenas nec neque efficitur, pretium ipsum sit amet, malesuada purus. Nunc dictum, ipsum ullamcorper tempus euismod, nisi odio convallis erat, a molestie libero urna posuere turpis. Phasellus convallis eu elit nec placerat. Aliquam sed egestas orci.
+- **Progetti**: come la pagina che stai leggendo in questo momento, è una sezione che introduce un progetto con le sue specifiche tecniche;
+- **Articoli**: un articolo di blog in cui discuto di qualcosa che ho implementato, inclusi i pensieri, i ragionamenti e le idee che mi hanno portato a determinate decisioni.
+
+### Nuxt UI
+
+<a href="https://nuxt.com/blog/nuxt-ui-v4" target="_blank">Nuxt UI v4</a> è una libreria di componenti open source. Si integra facilmente con **Nuxt Content** e alcuni componenti sono progettati per questo scopo, come ad esempio <a href="https://ui.nuxt.com/docs/components/content-toc" target="_blank">ContentToc</a>, il menu nella parte superiore della pagina che stai leggendo.
+
+### Nuxt i18n
+
+<a href="https://i18n.nuxtjs.org/" target="_blank">Nuxt i18n</a> mi ha aiutato a servire il sito web in due lingue, italiano e inglese. Fornisce una soluzione semplice per il routing prefix basato sulla lingua, evitando l'onere di gestire il path parameter della lingua.
+
+### Nuxt SEO
+
+<a href="https://nuxtseo.com/" target="_blank">Nuxt SEO</a> è una raccolta di moduli che gestisce tutti gli aspetti del traffico organico, aiutando ad esempio nell'impostazione automatica di file come `robots.txt` e `sitemap.xml`. Offre anche una bella libreria, <a href="https://nuxtseo.com/docs/og-image/getting-started/introduction" target="_blank">OG Image</a>, che crea un'immagine Open Graph dinamica che viene visualizzata quando un link viene condiviso nelle applicazioni di messaggistica e social media. Prova a condividere questa pagina del progetto!
+
+## Deploy
+
+Il sito web è pubblicato utilizzando <a href="https://docs.github.com/en/pages" target="_blank">Github Pages</a> con una pipeline CI/CD che viene eseguita al momento del push sul branch **main**. Grazie a Nuxt per aver offerto molti <a href="https://nuxt.com/deploy" target="_blank">preset</a> per la creazione e il rilascio dell'applicazione in maniera semplice a seconda del proprio servizio preferito.
