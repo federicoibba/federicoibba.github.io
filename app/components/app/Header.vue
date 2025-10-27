@@ -13,16 +13,15 @@
       <UNavigationMenu
         :items="items"
         orientation="horizontal"
-        class="hidden lg:flex -mx-2.5"
+        class="hidden lg:flex mr-4 gap-2"
       />
       <USelect
         :model-value="locale"
         :items="availableLocales"
         value-key="code"
-        class="ml-2"
         @update:model-value="(lang) => setLocale(lang)"
       />
-      <UColorModeSwitch class="ml-4" />
+      <UColorModeSwitch />
     </template>
   </UHeader>
 </template>

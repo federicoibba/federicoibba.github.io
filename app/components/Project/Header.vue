@@ -14,16 +14,28 @@
       <p>
         {{ project.description }}
       </p>
-      <UButton
-        icon="i-simple-icons-github"
-        :to="project.github"
-        target="_blank"
-        class="w-fit"
-        size="lg"
-        color="primary"
-      >
-        Github
-      </UButton>
+      <div class="flex flex-row">
+        <UButton
+          icon="i-simple-icons-github"
+          :to="project.github"
+          target="_blank"
+          class="w-fit"
+          size="lg"
+          color="primary"
+        >
+          Github
+        </UButton>
+        <UButton
+          v-if="articleUrl"
+          icon="lucide:book-text"
+          :to="articleUrl"
+          class="w-fit ml-4"
+          size="lg"
+          color="neutral"
+        >
+          {{ $t('projects.read-article') }}
+        </UButton>
+      </div>
       <div class="hidden lg:flex flex-col">
         <h2 class="text-xl md:text-2xl font-semibold mb-2">
           {{ $t('projects.technologies') }}
@@ -46,9 +58,16 @@
 <script lang="ts" setup>
 import type { ProjectsCollectionItem } from '@nuxt/content'
 
+const { locale } = useI18n()
+
 interface ProjectHeaderProps {
   project: ProjectsCollectionItem
 }
 
-defineProps<ProjectHeaderProps>()
+const { project } = defineProps<ProjectHeaderProps>()
+
+const articleUrl = computed(() => {
+  if (!project.article) return null
+  return `/${locale.value}/articles${project.article}`
+})
 </script>
