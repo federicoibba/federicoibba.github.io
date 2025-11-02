@@ -28,7 +28,7 @@ export default defineNuxtConfig({
     build: {
       markdown: {
         highlight: {
-          langs: ['js', 'html', 'css', 'typescript', 'python', 'json'],
+          langs: ['js', 'html', 'css', 'typescript', 'python', 'json', 'md'],
         },
       },
     },
