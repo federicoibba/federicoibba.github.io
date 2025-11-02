@@ -67,9 +67,10 @@ export default defineNuxtConfig({
     clientBundle: {
       icons: [
         'lucide:arrow-right',
+        'lucide:book',
         'lucide:book-a',
         'lucide:book-open',
-        'lucide:book',
+        'lucide:book-text',
         'lucide:check',
         'lucide:copy',
         'lucide:copy-check',
