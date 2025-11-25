@@ -20,7 +20,7 @@
     "@nuxt/ui": "^4.1.0",
     "@nuxtjs/i18n": "^10.2.1",
     "@nuxtjs/seo": "^3.2.2",
-    "better-sqlite3": "^12.4.1",
+    "better-sqlite3": "^12.4.6",
     "eslint": "^9.39.1",
     "nuxt": "^4.2.1",
     "typescript": "^5.9.3",
